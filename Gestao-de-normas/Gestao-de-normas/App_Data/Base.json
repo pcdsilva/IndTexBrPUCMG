@@ -1,0 +1,130 @@
+﻿[
+  {
+    "id": 1,
+    "categoria": "TERMINOLOGIA E SIMBOLOGIA TÊXTIL",
+    "nome": "ABNT NBR 12744:1993",
+    "anoPublicaçao": "1993",
+    "descricao": "Fibras têxteis – Classificação.",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 2,
+    "categoria": "TERMINOLOGIA E SIMBOLOGIA TÊXTIL",
+    "nome": "ABNT NBR NM ISO 3758:2010",
+    "anoPublicaçao": "2010",
+    "descricao": "Têxteis – Códigos de cuidado usando símbolos (ISO 3758:2005, IDT)",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 3,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "ABNT NBR 8427:1984",
+    "anoPublicaçao": "1984",
+    "descricao": "Emprego do sistema tex para expressar títulos têxteis – Procedimento",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 4,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "ABNT NBR 12251:1990",
+    "anoPublicaçao": "1990",
+    "descricao": "Designação dos fi os no sistema TEX – Procedimento",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 5,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "ABNT NBR 12299:1991",
+    "anoPublicaçao": "1991",
+    "descricao": "Cálculo da massa comercial de fi bras têxteis – Procedimento",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 6,
+    "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
+    "nome": "ABNT NBR 13372:1995",
+    "anoPublicaçao": "1995",
+    "descricao": "Mistura de fibra – Análise quantitativa – Eliminação prévia de matérias não fibrosas – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 7,
+    "categoria": "SOLIDEZ DE COR EM PRODUTOS TÊXTEIS",
+    "nome": "ABNT NBR ISO 105-A01:2011",
+    "anoPublicaçao": "2011",
+    "descricao": "Têxteis – Ensaios de solidez da cor – Parte A01: Princípios gerais de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 8,
+    "categoria": "SOLIDEZ DE COR EM PRODUTOS TÊXTEIS",
+    "nome": "ABNT NBR ISO 105-F02:2010",
+    "anoPublicaçao": "2010",
+    "descricao": "Têxteis – Ensaios de solidez da cor – Parte F02: Especificação para tecidos-testemunha de algodão e viscose",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 9,
+    "categoria": "SOLIDEZ DE COR EM PRODUTOS TÊXTEIS",
+    "nome": "ABNT NBR ISO 105-F03:2007",
+    "anoPublicaçao": "2007",
+    "descricao": "Têxteis – Ensaios de solidez da cor – Parte F03: Especificação para tecido-testemunha de poliamida",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 10,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 10320:1988",
+    "anoPublicaçao": "1998",
+    "descricao": "Materiais têxteis – Determinação das alterações dimensionais de tecidos planos e malhas – Lavagem em máquina doméstica automática – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 11,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 10677:1989",
+    "anoPublicaçao": "1989",
+    "descricao": "Materiais têxteis – Determinação do pH do extrato aquoso – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 12,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 12999:1993",
+    "anoPublicaçao": "1993",
+    "descricao": "Material têxtil – Ensaio de resistência à pressão hidrostática – Ensaio de coluna d’água – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 13,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 13000:1993",
+    "anoPublicaçao": "1993",
+    "descricao": "Material têxtil – Determinação da hidrofilidade de tecido – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 14,
+    "categoria": "ALGODÃO",
+    "nome": "ABNT NBR 11913:1991",
+    "anoPublicaçao": "1991",
+    "descricao": "Fibras de algodão – Determinação da fi nura (pelo método da resistência à passagem de ar) – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 15,
+    "categoria": "ALGODÃO",
+    "nome": "ABNT NBR 12276:1991",
+    "anoPublicaçao": "1991",
+    "descricao": "Iluminação artificial para salas de classificação de algodão – Procedimento",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  },
+  {
+    "id": 16,
+    "categoria": "ALGODÃO",
+    "nome": "ABNT NBR 12718:1992",
+    "anoPublicaçao": "1992",
+    "descricao": "Fibras de algodão – Determinação do material não fi broso do algodão – Método de ensaio",
+    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
+  }
+]
