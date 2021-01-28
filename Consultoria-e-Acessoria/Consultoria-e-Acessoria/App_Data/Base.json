@@ -1,0 +1,16 @@
+﻿[
+  {
+    "id": 1,
+    "departamento": "Segurança e Qualidade",
+    "setor": "Inspeção Qualidade Fornecedores",
+    "razaoSocial": "CGA Consultoria Ambiental Ltda",
+    "nomeFantasia": "CGA GEO Consultoria Ambiental",
+    "dtContratacao": "90604362000184",
+    "periodoContratacao": "10 meses",
+    "ativo": "Sim",
+    "dtInicio": "28/01/2021",
+    "dtTermino": "28/11/2021",
+    "norma": "ABNT NBR 12744:1993",
+    "descricao": "teste"
+  }
+]
