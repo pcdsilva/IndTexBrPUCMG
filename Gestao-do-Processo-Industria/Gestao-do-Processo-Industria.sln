@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestao-do-Processo-Industria", "Gestao-do-Processo-Industria\Gestao-do-Processo-Industria.csproj", "{CC700852-139C-4249-B6A4-3178F3EDE681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC700852-139C-4249-B6A4-3178F3EDE681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC700852-139C-4249-B6A4-3178F3EDE681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC700852-139C-4249-B6A4-3178F3EDE681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC700852-139C-4249-B6A4-3178F3EDE681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB328A7F-C30E-434C-928C-F11786D72F94}
+	EndGlobalSection
+EndGlobal
