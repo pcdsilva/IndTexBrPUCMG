@@ -11,24 +11,46 @@ namespace Gestao_do_Processo_Industria.Controllers
 {
     public class GestaoProcessosController : ApiController
     {
-        // GET: api/GestaoProcesso
-        public IEnumerable<Processo> Get()
+        // GET: api/GestaoProcessos/RetornarNormas
+        [HttpGet]
+        public List<Norma> RetornarNormas()
+        {
+            ProcessosDAO processosDAO = new ProcessosDAO();
+
+            return processosDAO.ListaNormas();
+        }
+
+        // GET: api/GestaoProcessos/RetornarNorma
+        [HttpGet]
+        [Obsolete]
+        public Norma RetornarNorma(int id)
+        {
+            ProcessosDAO processosDAO = new ProcessosDAO();
+
+            return processosDAO.ListaNorma(id);
+        }
+
+        // GET: api/GestaoProcessos/RetornarProcessos
+        [HttpGet]
+        public IEnumerable<Processo> RetornarProcessos()
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
 
             return processosDAO.ListaProcessos();
         }
 
-        // GET: api/GestaoProcesso/5
-        public Processo Get(int id)
+        // GET: api/GestaoProcessos/RetornarProcesso/5
+        [HttpGet]
+        public Processo RetornarProcesso(int id)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
 
             return processosDAO.ListaProcessos().Where(x => x.id == id).FirstOrDefault();
         }
 
-        // POST: api/GestaoProcesso
-        public List<Processo> Post(Processo processo)
+        // POST: api/GestaoProcessos/InserirProcessos
+        [HttpPost]
+        public List<Processo> InserirProcessos(Processo processo)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
             processosDAO.Inserir(processo);
@@ -37,15 +59,17 @@ namespace Gestao_do_Processo_Industria.Controllers
 
         }
 
-        // PUT: api/GestaoProcesso/5
-        public Processo Put(int id, Processo processo)
+        // PUT: api/GestaoProcessos/AtualizarProcessos/5
+        [HttpPut]
+        public Processo AtualizarProcessos(int id, Processo processo)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
             return processosDAO.Atualizar(id, processo);
         }
 
-        // DELETE: api/GestaoProcesso/5
-        public void Delete(int id)
+        // DELETE: api/GestaoProcessos/DeletarProcessos/5
+        [HttpDelete]
+        public void DeletarProcessos(int id)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
             processosDAO.Deletar(id);

@@ -67,3 +67,4 @@ D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-de-Normas\Gestao-de-normas\Gestao-de
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-de-Normas\Gestao-de-normas\Gestao-de-normas\obj\Debug\Gestao-de-normas.csproj.CopyComplete
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-de-Normas\Gestao-de-normas\Gestao-de-normas\obj\Debug\Gestao-de-normas.dll
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-de-Normas\Gestao-de-normas\Gestao-de-normas\obj\Debug\Gestao-de-normas.pdb
+D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-de-Normas\Gestao-de-normas\Gestao-de-normas\obj\Debug\Gestao-de-normas.csprojAssemblyReference.cache

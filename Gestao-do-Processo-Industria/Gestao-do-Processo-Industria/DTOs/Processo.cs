@@ -13,5 +13,6 @@ namespace Gestao_do_Processo_Industria.DTOs
         public decimal custo { get; set; }
         public int QatdeMarquinasUtilizadas { get; set; }
         public int horasEstimadas { get; set; }
+        public Norma norma { get; set; }
     }
 }

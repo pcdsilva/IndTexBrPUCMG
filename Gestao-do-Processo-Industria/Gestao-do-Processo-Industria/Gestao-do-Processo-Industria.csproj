@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\GestaoProcessosController.cs" />
+    <Compile Include="DTOs\Norma.cs" />
     <Compile Include="DTOs\Processo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -2,8 +2,11 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Text;
 using System.Web;
 using System.Web.Hosting;
 
@@ -27,6 +30,40 @@ namespace Gestao_do_Processo_Industria.Models
             File.WriteAllText(caminhoArquivo, json);
 
             return true;
+        }
+
+        public List<Norma> ListaNormas()
+        {
+            var webRequest = WebRequest.CreateHttp("https://localhost:44392/api/GestaoNormas");
+            webRequest.ContentType = "application/json";
+            webRequest.Method = "GET";
+            var json = webRequest.GetResponse();
+
+            var streamDados = json.GetResponseStream();
+            var reader = new StreamReader(streamDados,Encoding.UTF8);
+            var JsonRetorno = reader.ReadToEnd();
+            reader.Close();
+            var listaNormas = JsonConvert.DeserializeObject<List<Norma>>(JsonRetorno);
+
+            return listaNormas;
+        }
+
+        [Obsolete]
+        public Norma ListaNorma(int id)
+        {
+            var Url = ConfigurationSettings.AppSettings["url"];
+            var webRequest = WebRequest.CreateHttp(Url + id);
+            webRequest.ContentType = "application/json";
+            webRequest.Method = "GET";
+            var json = webRequest.GetResponse();
+
+            var streamDados = json.GetResponseStream();
+            var reader = new StreamReader(streamDados, Encoding.UTF8);
+            var JsonRetorno = reader.ReadToEnd();
+            reader.Close();
+            var listaNormas = JsonConvert.DeserializeObject<Norma>(JsonRetorno);
+
+            return listaNormas;
         }
 
         public Processo Inserir(Processo processo)

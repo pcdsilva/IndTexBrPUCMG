@@ -10,24 +10,27 @@ namespace Gestao_de_normas.Controllers
 {
     public class GestaoNormasController : ApiController
     {
-        // GET: api/GestaoNormas
-        public IEnumerable<Norma> Get()
+        // GET: api/GestaoNormas/RetornarNormas
+        [HttpGet]
+        public IEnumerable<Norma> RetornarNormas()
         {
             NormasDAO normasDAO = new NormasDAO();
 
             return normasDAO.ListaNormas();
         }
 
-        // GET: api/GestaoNormas/5
-        public Norma Get(int id)
+        // GET: api/GestaoNormas/RetornarNorma/5
+        [HttpGet]
+        public Norma RetornarNorma(int id)
         {
             NormasDAO normasDAO = new NormasDAO();
 
             return normasDAO.ListaNormas().Where(x=> x.id == id).FirstOrDefault();
         }
 
-        // POST: api/GestaoNormas
-        public List<Norma> Post(Norma norma)
+        // POST: api/GestaoNormas/InserirNorma
+        [HttpPost]
+        public List<Norma> InserirNorma(Norma norma)
         {
             NormasDAO normaDAO = new NormasDAO();
             normaDAO.Inserir(norma);
@@ -36,15 +39,17 @@ namespace Gestao_de_normas.Controllers
 
         }
 
-        // PUT: api/GestaoNormas/5
-        public Norma Put(int id, Norma norma)
+        // PUT: api/GestaoNormas/AtualizarNorma/5
+        [HttpPut]
+        public Norma AtualizarNorma(int id, Norma norma)
         {
             NormasDAO normasDAO = new NormasDAO();
             return normasDAO.Atualizar(id, norma);
         }
 
-        // DELETE: api/GestaoNormas/5
-        public void Delete(int id)
+        // DELETE: api/GestaoNormas/DeletarNorma/5
+        [HttpDelete]
+        public void DeletarNorma(int id)
         {
             NormasDAO normaDAO = new NormasDAO();
             normaDAO.Deletar(id);
