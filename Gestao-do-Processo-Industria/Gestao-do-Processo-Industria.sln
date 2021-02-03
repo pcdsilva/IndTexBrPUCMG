@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestao-do-Processo-Industria", "Gestao-do-Processo-Industria\Gestao-do-Processo-Industria.csproj", "{CC700852-139C-4249-B6A4-3178F3EDE681}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestao-do-Processo-Industrial", "Gestao-do-Processo-Industria\Gestao-do-Processo-Industrial.csproj", "{CC700852-139C-4249-B6A4-3178F3EDE681}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

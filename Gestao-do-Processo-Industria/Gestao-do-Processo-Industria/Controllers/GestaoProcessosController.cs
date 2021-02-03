@@ -1,18 +1,19 @@
-﻿using Gestao_do_Processo_Industria.DTOs;
-using Gestao_do_Processo_Industria.Models;
+﻿using Gestao_do_Processo_Industrial.DTOs;
+using Gestao_do_Processo_Industrial.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
-namespace Gestao_do_Processo_Industria.Controllers
+namespace Gestao_do_Processo_Industrial.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class GestaoProcessosController : ApiController
     {
         // GET: api/GestaoProcessos/RetornarNormas
         [HttpGet]
+        [Authorize]
         public List<Norma> RetornarNormas()
         {
             ProcessosDAO processosDAO = new ProcessosDAO();

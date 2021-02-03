@@ -1,17 +1,17 @@
 ﻿using Consultoria_e_Acessoria.DTOs;
 using Consultoria_e_Acessoria.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Consultoria_e_Acessoria.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class ConsultoriaAcessoriaController : ApiController
     {
         // GET: api/ConsultoriaAcessoria
+        [Authorize]
         public IEnumerable<Consultoria> Get()
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();

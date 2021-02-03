@@ -19,7 +19,7 @@ namespace Consultoria_e_Acessoria.DTOs
         public string dtInicio { get; set; }
         public string dtTermino { get; set; }
 
-        public string norma { get; set; }
+        public Norma norma { get; set; }
         public string descricao { get; set; }
     }
 }

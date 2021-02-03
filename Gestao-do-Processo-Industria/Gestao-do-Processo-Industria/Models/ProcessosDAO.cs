@@ -1,4 +1,4 @@
-﻿using Gestao_do_Processo_Industria.DTOs;
+﻿using Gestao_do_Processo_Industrial.DTOs;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -7,10 +7,9 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using System.Web;
 using System.Web.Hosting;
 
-namespace Gestao_do_Processo_Industria.Models
+namespace Gestao_do_Processo_Industrial.Models
 {
     public class ProcessosDAO
     {
