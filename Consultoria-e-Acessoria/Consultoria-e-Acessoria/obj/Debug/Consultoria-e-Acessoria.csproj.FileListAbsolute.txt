@@ -86,3 +86,4 @@ D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Consultoria-e-Acessoria\Consultoria-e-Acess
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Consultoria-e-Acessoria\Consultoria-e-Acessoria\Consultoria-e-Acessoria\obj\Debug\Consultoria-e-Acessoria.dll
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Consultoria-e-Acessoria\Consultoria-e-Acessoria\Consultoria-e-Acessoria\obj\Debug\Consultoria-e-Acessoria.pdb
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Consultoria-e-Acessoria\Consultoria-e-Acessoria\Consultoria-e-Acessoria\obj\Debug\Consultoria-e-Acessoria.csprojAssemblyReference.cache
+D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Consultoria-e-Acessoria\Consultoria-e-Acessoria\Consultoria-e-Acessoria\bin\System.Web.Http.Cors.xml

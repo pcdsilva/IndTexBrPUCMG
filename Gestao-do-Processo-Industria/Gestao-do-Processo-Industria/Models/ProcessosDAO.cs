@@ -33,7 +33,8 @@ namespace Gestao_do_Processo_Industrial.Models
 
         public List<Norma> ListaNormas()
         {
-            var webRequest = WebRequest.CreateHttp("https://localhost:44392/api/GestaoNormas");
+            var Url = ConfigurationSettings.AppSettings["url"];
+            var webRequest = WebRequest.CreateHttp(Url);
             webRequest.ContentType = "application/json";
             webRequest.Method = "GET";
             var json = webRequest.GetResponse();
