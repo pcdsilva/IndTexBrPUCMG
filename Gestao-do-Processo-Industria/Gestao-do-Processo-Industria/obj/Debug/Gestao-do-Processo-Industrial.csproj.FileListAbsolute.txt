@@ -207,7 +207,6 @@ D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Proc
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\bin\pt-br\System.Net.Http.Formatting.resources.dll
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\bin\pt-br\System.Web.Http.resources.dll
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\bin\pt-br\System.Web.Http.WebHost.resources.dll
-D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industrial.csprojAssemblyReference.cache
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industrial.csproj.CoreCompileInputs.cache
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industrial.csproj.CopyComplete
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industria.dll

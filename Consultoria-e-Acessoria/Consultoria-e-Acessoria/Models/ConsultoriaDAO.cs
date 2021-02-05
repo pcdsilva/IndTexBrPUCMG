@@ -34,7 +34,7 @@ namespace Consultoria_e_Acessoria.Models
 
         public List<Norma> ListaNormas()
         {
-            var Url = ConfigurationSettings.AppSettings["url"];
+            var Url = ConfigurationSettings.AppSettings["urlRNs"];
             var webRequest = WebRequest.CreateHttp(Url);
             webRequest.ContentType = "application/json";
             webRequest.Method = "GET";
@@ -52,7 +52,7 @@ namespace Consultoria_e_Acessoria.Models
         [Obsolete]
         public Norma ListaNorma(int id)
         {
-            var Url = ConfigurationSettings.AppSettings["url"];
+            var Url = ConfigurationSettings.AppSettings["urlRN"];
             var webRequest = WebRequest.CreateHttp(Url + id);
             webRequest.ContentType = "application/json";
             webRequest.Method = "GET";

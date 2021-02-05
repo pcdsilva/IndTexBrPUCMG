@@ -33,7 +33,7 @@ namespace Gestao_do_Processo_Industrial.Models
 
         public List<Norma> ListaNormas()
         {
-            var Url = ConfigurationSettings.AppSettings["url"];
+            var Url = ConfigurationSettings.AppSettings["urlRNs"];
             var webRequest = WebRequest.CreateHttp(Url);
             webRequest.ContentType = "application/json";
             webRequest.Method = "GET";
@@ -51,7 +51,7 @@ namespace Gestao_do_Processo_Industrial.Models
         [Obsolete]
         public Norma ListaNorma(int id)
         {
-            var Url = ConfigurationSettings.AppSettings["url"];
+            var Url = ConfigurationSettings.AppSettings["urlRN"];
             var webRequest = WebRequest.CreateHttp(Url + id);
             webRequest.ContentType = "application/json";
             webRequest.Method = "GET";

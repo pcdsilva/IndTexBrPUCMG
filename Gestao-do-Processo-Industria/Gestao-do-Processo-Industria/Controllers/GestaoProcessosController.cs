@@ -9,11 +9,13 @@ using System.Web.Http.Cors;
 namespace Gestao_do_Processo_Industrial.Controllers
 {
     [EnableCors("*", "*", "*")]
+    [RoutePrefix("api/GestaoProcessos")]
     public class GestaoProcessosController : ApiController
     {
         // GET: api/GestaoProcessos/RetornarNormas
         [HttpGet]
-        [Authorize]
+        [Route("RetornarNormas")]
+        //[Authorize]
         public List<Norma> RetornarNormas()
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
@@ -23,7 +25,9 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // GET: api/GestaoProcessos/RetornarNorma
         [HttpGet]
+        [Route("RetornarNorma/{id:int}")]
         [Obsolete]
+        //[Authorize]
         public Norma RetornarNorma(int id)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
@@ -33,6 +37,8 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // GET: api/GestaoProcessos/RetornarProcessos
         [HttpGet]
+        [Route("RetornarProcessos")]
+        //[Authorize]
         public IEnumerable<Processo> RetornarProcessos()
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
@@ -42,6 +48,8 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // GET: api/GestaoProcessos/RetornarProcesso/5
         [HttpGet]
+        [Route("RetornarProcesso/{id:int}")]
+        //[Authorize]
         public Processo RetornarProcesso(int id)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
@@ -51,6 +59,8 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // POST: api/GestaoProcessos/InserirProcessos
         [HttpPost]
+        [Route("InserirProcessos/processo")]
+        //[Authorize]
         public List<Processo> InserirProcessos(Processo processo)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
@@ -62,6 +72,8 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // PUT: api/GestaoProcessos/AtualizarProcessos/5
         [HttpPut]
+        [Route("AtualizarProcessos/{id:int}/processo")]
+        //[Authorize]
         public Processo AtualizarProcessos(int id, Processo processo)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
@@ -70,6 +82,8 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // DELETE: api/GestaoProcessos/DeletarProcessos/5
         [HttpDelete]
+        [Route("DeletarProcessos/{id:int}")]
+        //[Authorize]
         public void DeletarProcessos(int id)
         {
             ProcessosDAO processosDAO = new ProcessosDAO();
