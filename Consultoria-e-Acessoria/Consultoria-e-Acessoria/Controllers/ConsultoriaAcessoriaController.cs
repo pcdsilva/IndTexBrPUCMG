@@ -57,7 +57,7 @@ namespace Consultoria_e_Acessoria.Controllers
             return consultoriaDAO.ListaConsultorias().Where(x => x.id == id).FirstOrDefault();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("InserirConsultoria")]
         //[Authorize]
         // POST: api/ConsultoriaAcessoria/InserirConsultoria
@@ -71,7 +71,7 @@ namespace Consultoria_e_Acessoria.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPut]
         [Route("AtualizarConsultoria/{id:int}")]
         //[Authorize]
         // PUT: api/ConsultoriaAcessoria/AtualizarConsultoria/5
@@ -81,7 +81,7 @@ namespace Consultoria_e_Acessoria.Controllers
             return consultoriaDAO.Atualizar(id, consultoria);
         }
 
-        [HttpGet]
+        [HttpDelete]
         [Route("DeletarConsultoria/{id:int}")]
         //[Authorize]
         // DELETE: api/ConsultoriaAcessoria/DeletarConsultoria/5
