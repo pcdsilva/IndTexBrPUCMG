@@ -34,7 +34,7 @@ namespace Gestao_de_normas.Controllers
 
         // POST: api/GestaoNormas/InserirNorma
         [HttpPost]
-        [Route("InserirNorma/norma")]
+        [Route("InserirNorma")]
         //[Authorize]
         public List<Norma> InserirNorma(Norma norma)
         {
@@ -47,7 +47,7 @@ namespace Gestao_de_normas.Controllers
 
         // PUT: api/GestaoNormas/AtualizarNorma/5
         [HttpPut]
-        [Route("AtualizarNorma/{id:int}/norma")]
+        [Route("AtualizarNorma/{id:int}")]
         //[Authorize]
         public Norma AtualizarNorma(int id, Norma norma)
         {

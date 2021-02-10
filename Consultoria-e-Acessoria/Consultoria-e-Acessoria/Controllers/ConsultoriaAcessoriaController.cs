@@ -58,7 +58,7 @@ namespace Consultoria_e_Acessoria.Controllers
         }
 
         [HttpGet]
-        [Route("InserirConsultoria/consultoria")]
+        [Route("InserirConsultoria")]
         //[Authorize]
         // POST: api/ConsultoriaAcessoria/InserirConsultoria
         public List<Consultoria> InserirConsultoria(Consultoria consultoria)
@@ -72,7 +72,7 @@ namespace Consultoria_e_Acessoria.Controllers
 
 
         [HttpGet]
-        [Route("AtualizarConsultoria/{id:int}/consultoria")]
+        [Route("AtualizarConsultoria/{id:int}")]
         //[Authorize]
         // PUT: api/ConsultoriaAcessoria/AtualizarConsultoria/5
         public Consultoria AtualizarConsultoria(int id, Consultoria consultoria)

@@ -59,7 +59,7 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // POST: api/GestaoProcessos/InserirProcessos
         [HttpPost]
-        [Route("InserirProcessos/processo")]
+        [Route("InserirProcessos")]
         //[Authorize]
         public List<Processo> InserirProcessos(Processo processo)
         {
@@ -72,7 +72,7 @@ namespace Gestao_do_Processo_Industrial.Controllers
 
         // PUT: api/GestaoProcessos/AtualizarProcessos/5
         [HttpPut]
-        [Route("AtualizarProcessos/{id:int}/processo")]
+        [Route("AtualizarProcessos/{id:int}")]
         //[Authorize]
         public Processo AtualizarProcessos(int id, Processo processo)
         {

@@ -212,3 +212,4 @@ D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Proc
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industria.dll
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industria.pdb
 D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\bin\System.Web.Http.Cors.xml
+D:\PUC MINAS\TCC\TCC\Projeto Poc TCC\Gestao-do-Processo-Industria\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industrial.csprojAssemblyReference.cache
