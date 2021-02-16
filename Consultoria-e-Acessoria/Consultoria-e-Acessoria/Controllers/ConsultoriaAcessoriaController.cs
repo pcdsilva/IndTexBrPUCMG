@@ -9,12 +9,12 @@ using System.Web.Http.Cors;
 namespace Consultoria_e_Acessoria.Controllers
 {
     [EnableCors("*", "*", "*")]
-    [RoutePrefix("api/ConsultoriaAcessoria")]
+    [RoutePrefix("api")]
     public class ConsultoriaAcessoriaController : ApiController
     {
-        // GET: api/ConsultoriaAcessoria/RetornarNormas
+        // GET: ConsultoriaAcessoria/api/Normas
         [HttpGet]
-        [Route("RetornarNormas")]
+        [Route("Normas")]
         //[Authorize]
         public List<Norma> RetornarNormas()
         {
@@ -23,10 +23,10 @@ namespace Consultoria_e_Acessoria.Controllers
             return consultoriaDAO.ListaNormas();
         }
 
-        // GET: api/ConsultoriaAcessoria/RetornarNorma
+        // GET: ConsultoriaAcessoria/api/Normas/5
         [HttpGet]
         [Obsolete]
-        [Route("RetornarNorma/{id:int}")]
+        [Route("Normas/{id:int}")]
         //[Authorize]
         public Norma RetornarNorma(int id)
         {
@@ -36,9 +36,9 @@ namespace Consultoria_e_Acessoria.Controllers
         }
 
         [HttpGet]
-        [Route("RetornarConsultorias")]
+        [Route("Consultorias")]
         //[Authorize]
-        // GET: api/ConsultoriaAcessoria/RetornarConsultorias
+        // GET: ConsultoriaAcessoria/api/Consultorias
         public IEnumerable<Consultoria> RetornarConsultorias()
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();
@@ -47,9 +47,9 @@ namespace Consultoria_e_Acessoria.Controllers
         }
 
         [HttpGet]
-        [Route("RetornarConsultoria/{id:int}")]
+        [Route("Consultorias/{id:int}")]
         //[Authorize]
-        // GET: api/ConsultoriaAcessoria/RetornarConsultoria/5
+        // GET: ConsultoriaAcessoria/api/Consultorias/5
         public Consultoria RetornarConsultoria(int id)
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();
@@ -58,9 +58,9 @@ namespace Consultoria_e_Acessoria.Controllers
         }
 
         [HttpPost]
-        [Route("InserirConsultoria")]
+        [Route("Consultorias")]
         //[Authorize]
-        // POST: api/ConsultoriaAcessoria/InserirConsultoria
+        // POST: ConsultoriaAcessoria/api/Consultorias
         public List<Consultoria> InserirConsultoria(Consultoria consultoria)
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();
@@ -72,9 +72,9 @@ namespace Consultoria_e_Acessoria.Controllers
 
 
         [HttpPut]
-        [Route("AtualizarConsultoria/{id:int}")]
+        [Route("Consultorias/{id:int}")]
         //[Authorize]
-        // PUT: api/ConsultoriaAcessoria/AtualizarConsultoria/5
+        // PUT: ConsultoriaAcessoria/api/Consultorias/5
         public Consultoria AtualizarConsultoria(int id, Consultoria consultoria)
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();
@@ -82,9 +82,9 @@ namespace Consultoria_e_Acessoria.Controllers
         }
 
         [HttpDelete]
-        [Route("DeletarConsultoria/{id:int}")]
+        [Route("Consultorias/{id:int}")]
         //[Authorize]
-        // DELETE: api/ConsultoriaAcessoria/DeletarConsultoria/5
+        // DELETE: ConsultoriaAcessoria/api/Consultorias/5
         public void DeletarConsultoria(int id)
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();

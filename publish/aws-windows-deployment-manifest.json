@@ -1,0 +1,39 @@
+{
+    "manifestVersion": 1,
+      "iisConfig": {"appPools": [
+          {"name": "MyFirstPool",
+           "recycling": {"regularTimeInterval": 10}
+          },
+          {"name": "MySecondPool",
+           "recycling": {"regularTimeInterval": 10}
+          },
+          {"name": "MyThirdPool",
+            "recycling": {"regularTimeInterval": 10}
+           }
+         ]
+        },
+      "deployments": {"msDeploy": [
+          {"name": "Gestao-de-normas",
+            "parameters": {
+               "appBundle": "Gestao-de-normas.zip",
+               "iisPath": "/GestaoNormas",
+               "appPool": "MyFirstPool"
+               }
+          },
+          {"name": "Consultoria-e-Acessoria",
+            "parameters": {
+               "appBundle": "Consultoria-e-Acessoria.zip",
+               "iisPath": "/ConsultoriaAcessoria",
+               "appPool": "MySecondPool"
+              }
+          },
+          {"name": "Gestao-do-Processo-Industrial",
+            "parameters": {
+               "appBundle": "Gestao-do-Processo-Industrial.zip",
+               "iisPath": "/GestaoProcessos",
+               "appPool": "MyThirdPool"
+               }
+          }
+         ]
+        }
+    }

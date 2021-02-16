@@ -7,12 +7,12 @@ using System.Web.Http.Cors;
 namespace Gestao_de_normas.Controllers
 {
     [EnableCors("*", "*", "*")]
-    [RoutePrefix("api/GestaoNormas")]
+    [RoutePrefix("api")]
     public class GestaoNormasController : ApiController
     {
-        // GET: api/GestaoNormas/RetornarNormas
+        // GET: GestaoNormas/api/Normas
         [HttpGet]
-        [Route("RetornarNormas")]
+        [Route("Normas")]
         //[Authorize]
         public IEnumerable<Norma> RetornarNormas()
         {
@@ -21,9 +21,9 @@ namespace Gestao_de_normas.Controllers
             return normasDAO.ListaNormas();
         }
 
-        // GET: api/GestaoNormas/RetornarNorma/5
+        // GET: GestaoNormas/api/Normas/5
         [HttpGet]
-        [Route("RetornarNorma/{id:int}")]
+        [Route("Normas/{id:int}")]
         //[Authorize]
         public Norma RetornarNorma(int id)
         {
@@ -32,9 +32,9 @@ namespace Gestao_de_normas.Controllers
             return normasDAO.ListaNormas().Where(x=> x.id == id).FirstOrDefault();
         }
 
-        // POST: api/GestaoNormas/InserirNorma
+        // POST: GestaoNormas/api/Normas
         [HttpPost]
-        [Route("InserirNorma")]
+        [Route("Normas")]
         //[Authorize]
         public List<Norma> InserirNorma(Norma norma)
         {
@@ -45,9 +45,9 @@ namespace Gestao_de_normas.Controllers
 
         }
 
-        // PUT: api/GestaoNormas/AtualizarNorma/5
+        // PUT: GestaoNormas/api/Normas/5
         [HttpPut]
-        [Route("AtualizarNorma/{id:int}")]
+        [Route("Normas/{id:int}")]
         //[Authorize]
         public Norma AtualizarNorma(int id, Norma norma)
         {
@@ -55,9 +55,9 @@ namespace Gestao_de_normas.Controllers
             return normasDAO.Atualizar(id, norma);
         }
 
-        // DELETE: api/GestaoNormas/DeletarNorma/5
+        // DELETE: GestaoNormas/api/Normas/5
         [HttpDelete]
-        [Route("DeletarNorma/{id:int}")]
+        [Route("Normas/{id:int}")]
         //[Authorize]
         public void DeletarNorma(int id)
         {
