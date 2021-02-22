@@ -1,0 +1,460 @@
+{
+	"info": {
+		"_postman_id": "031752bd-bfa9-4a4d-9296-42365b46d69c",
+		"name": "SIGO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET PROCESSOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PROCESSOS->NORMAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PROCESSOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"descricao\": \"Produção de Tecido Vermelho\",\r\n        \"precoVenda\": 5000.0,\r\n        \"custo\": 500.0,\r\n        \"qatdeMarquinasUtilizadas\": 2,\r\n        \"horasEstimadas\": 8,\r\n        \"norma\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PROCESSOS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL PROCESSOS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoProcessos/api/Processos/4",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoProcessos",
+						"api",
+						"Processos",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONSULTORIAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Consultorias/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAcessoria",
+						"api",
+						"Consultorias",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONSULTORIAS->NORMAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAcessoria",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST CONSULTORIAS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"departamento\": \"Segurança e Qualidade\",\r\n        \"setor\": \"Inspeção Qualidade Fornecedores\",\r\n        \"razaoSocial\": \"CGA Consultoria Ambiental Ltda\",\r\n        \"nomeFantasia\": \"CGA GEO Consultoria Ambiental\",\r\n        \"cnpj\": null,\r\n        \"dtContratacao\": \"90604362000184\",\r\n        \"periodoContratacao\": \"10 meses\",\r\n        \"ativo\": \"Sim\",\r\n        \"dtInicio\": \"28/01/2021\",\r\n        \"dtTermino\": \"28/11/2021\",\r\n        \"norma\": null,\r\n        \"descricao\": \"Consultoria\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Consultorias/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAcessoria",
+						"api",
+						"Consultorias",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT CONSULTORIAS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAcessoria",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL CONSULTORIAS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n        \"id\" : \"2\"\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Consultorias/4",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"ConsultoriaAcessoria",
+						"api",
+						"Consultorias",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET NORMAS ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST NORMAS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT \",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras \",\r\n        \"link\": \"http:\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT NORMAS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"categoria\": \"TERSTE33S\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/2",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL NORMAS",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": \"2\",\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/27",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"Normas",
+						"27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"categoria\": \"TERSTESa\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44392/api/Normas/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"api",
+						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

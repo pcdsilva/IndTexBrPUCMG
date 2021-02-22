@@ -137,7 +137,9 @@
     <Compile Include="Token\ProviderDeTokensDeAcesso.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Base.json" />
+    <Content Include="App_Data\Base.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Properties\PublishProfiles\IISProfile1.pubxml" />

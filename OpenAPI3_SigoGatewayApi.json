@@ -1,0 +1,169 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "SigoGatewayApi",
+    "version" : "2021-02-16 17:47:34UTC"
+  },
+  "servers" : [ {
+    "url" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/{basePath}",
+    "variables" : {
+      "basePath" : {
+        "default" : ""
+      }
+    }
+  } ],
+  "paths" : {
+    "/ConsultoriaAcessoria/api/Consultorias/{proxy+}" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /ConsultoriaAcessoria/api/Consultorias/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "ANY",
+          "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/ConsultoriaAcessoria/api/Consultorias/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    },
+    "/GestaoNormas/api/Normas/{proxy+}" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /GestaoNormas/api/Normas/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "ANY",
+          "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/GestaoNormas/api/Normas/{proxy}",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/GestaoProcessos/api/Processos/{proxy+}" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /GestaoProcessos/api/Processos/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "ANY",
+          "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/GestaoProcessos/api/Processos/{proxy}",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/ConsultoriaAcessoria/api/Normas/{proxy+}" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /ConsultoriaAcessoria/api/Normas/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "GET",
+          "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/ConsultoriaAcessoria/api/Normas/{proxy}",
+          "connectionType" : "INTERNET"
+        }
+      }
+    },
+    "/GestaoProcessos/api/Normas/{proxy+}" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /GestaoProcessos/api/Normas/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "GET",
+          "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/GestaoProcessos/api/Normas/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    }
+  },
+  "components" : {
+    "x-amazon-apigateway-integrations" : {
+      "unusedIntegration_ul8u2tj" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "ANY",
+        "uri" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/GestaoProcessos/api/Processos/{id}",
+        "connectionType" : "INTERNET"
+      },
+      "unusedIntegration_gdxobl9" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "ANY",
+        "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/GestaoNormas/api/Normas",
+        "connectionType" : "INTERNET"
+      },
+      "unusedIntegration_fyxu0b1" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "GET",
+        "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/GestaoProcessos/api/Normas",
+        "connectionType" : "INTERNET"
+      },
+      "unusedIntegration_49kism3" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "ANY",
+        "uri" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/ConsultoriaAcessoria/api/Consultorias/{id}?",
+        "connectionType" : "INTERNET",
+        "timeoutInMillis" : 30000
+      },
+      "unusedIntegration_hzk2kw5" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "ANY",
+        "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/GestaoProcessos/api/Processos",
+        "connectionType" : "INTERNET"
+      },
+      "unusedIntegration_awwvhvq" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "GET",
+        "uri" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/GestaoProcessos/api/Normas/{id}",
+        "connectionType" : "INTERNET"
+      },
+      "unusedIntegration_rgqepld" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "GET",
+        "uri" : "http://sigoapp-env.eba-vpj7jkne.us-east-1.elasticbeanstalk.com/ConsultoriaAcessoria/api/Normas",
+        "connectionType" : "INTERNET",
+        "timeoutInMillis" : 30000
+      },
+      "unusedIntegration_p47pcoc" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "GET",
+        "uri" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/ConsultoriaAcessoria/api/Normas/{id}",
+        "connectionType" : "INTERNET"
+      },
+      "unusedIntegration_gnugl46" : {
+        "payloadFormatVersion" : "1.0",
+        "type" : "http_proxy",
+        "httpMethod" : "ANY",
+        "uri" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/GestaoNormas/api/Normas/{id}",
+        "connectionType" : "INTERNET"
+      }
+    }
+  },
+  "x-amazon-apigateway-importexport-version" : "1.0"
+}
