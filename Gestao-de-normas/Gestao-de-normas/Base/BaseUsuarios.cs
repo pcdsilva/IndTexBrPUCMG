@@ -9,10 +9,16 @@ namespace Gestao_de_normas.Base
         {
             return new List<Usuario>
             {
-                new Usuario { Nome = "Murilo", Senha = "123456" },
-                new Usuario { Nome = "Paulo", Senha = "123456" },
-                new Usuario { Nome = "Andrea", Senha = "123456" },
+                new Usuario { Nome = "Murilo", Senha = "123456", Perfil = new string[] { Perfil.Admin} },
+                new Usuario { Nome = "Paulo", Senha = "123456" , Perfil = new string[] { Perfil.Admin} },
+                new Usuario { Nome = "Andrea", Senha = "123456", Perfil = new string[] { Perfil.User } }
             };
         }
+    }
+
+    public class Perfil
+    {
+        public const string Admin = "Administrador";
+        public const string User = "Usuario";
     }
 }
