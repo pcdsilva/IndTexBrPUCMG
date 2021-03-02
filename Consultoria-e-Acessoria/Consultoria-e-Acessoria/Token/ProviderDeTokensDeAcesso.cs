@@ -23,12 +23,10 @@ namespace Consultoria_e_Acessoria.Token
             if (usuario == null)
             {
                 context.SetError("invalid_grant", "Usuário não encontrado ou senha incorreta");
+                return;
             }
-            else
-            {
                 var identidadeUsuario = new ClaimsIdentity(context.Options.AuthenticationType);
                 context.Validated(identidadeUsuario);
-            }
         }
     }
 }
