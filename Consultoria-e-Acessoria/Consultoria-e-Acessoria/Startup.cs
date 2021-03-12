@@ -43,15 +43,15 @@ namespace Consultoria_e_Acessoria
 
         private void AtivandoAcessTokens(IAppBuilder app)
         {
-            var opcoesConfiguracaoToken = new OAuthAuthorizationServerOptions()
-            {
-                AllowInsecureHttp = true,
-                TokenEndpointPath = new PathString("/token"),
-                AccessTokenExpireTimeSpan = TimeSpan.FromHours(1),
-                Provider = new ProviderDeTokensDeAcesso()
-            };
+            //var opcoesConfiguracaoToken = new OAuthAuthorizationServerOptions()
+            //{
+            //    AllowInsecureHttp = true,
+            //    TokenEndpointPath = new PathString("/token"),
+            //    AccessTokenExpireTimeSpan = TimeSpan.FromHours(1),
+            //    Provider = new ProviderDeTokensDeAcesso()
+            //};
 
-            app.UseOAuthAuthorizationServer(opcoesConfiguracaoToken);
+            //app.UseOAuthAuthorizationServer(opcoesConfiguracaoToken);
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
         }
     }
