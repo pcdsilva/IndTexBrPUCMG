@@ -15,7 +15,7 @@ namespace Consultoria_e_Acessoria.Controllers
         // GET: ConsultoriaAcessoria/api/Normas
         [HttpGet]
         [Route("Normas")]
-        //[Authorize]
+        [Authorize]
         public List<Norma> RetornarNormas()
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();
@@ -27,7 +27,7 @@ namespace Consultoria_e_Acessoria.Controllers
         [HttpGet]
         [Obsolete]
         [Route("Normas/{id:int}")]
-        //[Authorize]
+        [Authorize]
         public Norma RetornarNorma(int id)
         {
             ConsultoriaDAO consultoriaDAO = new ConsultoriaDAO();
@@ -37,7 +37,7 @@ namespace Consultoria_e_Acessoria.Controllers
 
         [HttpGet]
         [Route("Consultorias")]
-        //[Authorize]
+        [Authorize]
         // GET: ConsultoriaAcessoria/api/Consultorias
         public IEnumerable<Consultoria> RetornarConsultorias()
         {
@@ -48,7 +48,7 @@ namespace Consultoria_e_Acessoria.Controllers
 
         [HttpGet]
         [Route("Consultorias/{id:int}")]
-        //[Authorize]
+        [Authorize]
         // GET: ConsultoriaAcessoria/api/Consultorias/5
         public Consultoria RetornarConsultoria(int id)
         {
@@ -59,7 +59,7 @@ namespace Consultoria_e_Acessoria.Controllers
 
         [HttpPost]
         [Route("Consultorias")]
-        //[Authorize]
+        [Authorize]
         // POST: ConsultoriaAcessoria/api/Consultorias
         public List<Consultoria> InserirConsultoria(Consultoria consultoria)
         {
@@ -73,7 +73,7 @@ namespace Consultoria_e_Acessoria.Controllers
 
         [HttpPut]
         [Route("Consultorias/{id:int}")]
-        //[Authorize]
+        [Authorize]
         // PUT: ConsultoriaAcessoria/api/Consultorias/5
         public Consultoria AtualizarConsultoria(int id, Consultoria consultoria)
         {
@@ -83,7 +83,7 @@ namespace Consultoria_e_Acessoria.Controllers
 
         [HttpDelete]
         [Route("Consultorias/{id:int}")]
-        //[Authorize]
+        [Authorize]
         // DELETE: ConsultoriaAcessoria/api/Consultorias/5
         public void DeletarConsultoria(int id)
         {

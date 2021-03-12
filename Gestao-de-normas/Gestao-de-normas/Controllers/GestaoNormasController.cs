@@ -13,7 +13,7 @@ namespace Gestao_de_normas.Controllers
         // GET: GestaoNormas/api/Normas
         [HttpGet]
         [Route("Normas")]
-        //[Authorize]
+        [Authorize]
         public IEnumerable<Norma> RetornarNormas()
         {
             NormasDAO normasDAO = new NormasDAO();
@@ -24,7 +24,7 @@ namespace Gestao_de_normas.Controllers
         // GET: GestaoNormas/api/Normas/5
         [HttpGet]
         [Route("Normas/{id:int}")]
-        //[Authorize]
+        [Authorize]
         public Norma RetornarNorma(int id)
         {
             NormasDAO normasDAO = new NormasDAO();
@@ -35,7 +35,7 @@ namespace Gestao_de_normas.Controllers
         // POST: GestaoNormas/api/Normas
         [HttpPost]
         [Route("Normas")]
-        //[Authorize]
+        [Authorize]
         public List<Norma> InserirNorma(Norma norma)
         {
             NormasDAO normaDAO = new NormasDAO();
@@ -48,7 +48,7 @@ namespace Gestao_de_normas.Controllers
         // PUT: GestaoNormas/api/Normas/5
         [HttpPut]
         [Route("Normas/{id:int}")]
-        //[Authorize]
+        [Authorize]
         public Norma AtualizarNorma(int id, Norma norma)
         {
             NormasDAO normasDAO = new NormasDAO();
@@ -58,7 +58,7 @@ namespace Gestao_de_normas.Controllers
         // DELETE: GestaoNormas/api/Normas/5
         [HttpDelete]
         [Route("Normas/{id:int}")]
-        //[Authorize]
+        [Authorize]
         public void DeletarNorma(int id)
         {
             NormasDAO normaDAO = new NormasDAO();
