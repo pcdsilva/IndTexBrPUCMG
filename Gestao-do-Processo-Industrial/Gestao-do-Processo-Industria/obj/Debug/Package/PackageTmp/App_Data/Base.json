@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "descricao": "Produção de Tecido Vermelho",
+    "precoVenda": 5000.0,
+    "custo": 500.0,
+    "QatdeMarquinasUtilizadas": 2,
+    "horasEstimadas": 8,
+    "norma": null
+  },
+  {
+    "id": 2,
+    "descricao": "Produção de Tecido Amarelo",
+    "precoVenda": 2000.0,
+    "custo": 200.0,
+    "QatdeMarquinasUtilizadas": 1,
+    "horasEstimadas": 4,
+    "norma": null
+  },
+  {
+    "id": 3,
+    "descricao": "Produção de Tecido Preto",
+    "precoVenda": 3000.0,
+    "custo": 300.0,
+    "QatdeMarquinasUtilizadas": 5,
+    "horasEstimadas": 6,
+    "norma": null
+  }
+]

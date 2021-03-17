@@ -12,7 +12,13 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer WxEz80STvdAIu_pk8av7OMu5N5xhgR8lP6G1asCAZp9QvF-NLaNITtnECO0CJDYFDi-HsVX5LNobpPEdEU2Tzp2JCFCGqgXIWu7NIrDscGPdwTvCUSFogKU-QJJLMImbG7rlkmShy-fup7Cv585h3ixYshvJZ-HHmcVe96136j4OcBgFXhGw50wDqeNit7t_B0G53Ik4WoyiWP6Wp2_IT9xfio1y8morNEothVdROVRo9qXEh-t0JclJ2GUvBPGq2iP0_P5GdCwUhGquhZHm_-6Zb_iAFP6LhocQEzZuNJqCwfUjDCI0BNFc5ebm31yT",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "",
@@ -162,8 +168,17 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer X85wHcY4U1P8Qe8TReRVTgX-UOHgiSzZn_cWPg6QUz0uQYYutocDoIOrwPe6RIhE-yIk5dKf9szyV3xEvbCL_4URoUBOGMRsrw8TDFJIqLc3KZIKgHBIiYTuOxyugj1AT5n05X0t3C-e2EScR-Vggj5gjtktgcRWOva3VDNF6cimX85-v_iPCXgVO_0p9PmDLv9PYJBihERUYb9X134Njy245uPOGRpwUSeW3_IhdxG4gCNIzu9yz9KnWEq_oYJd1-HYwdazUgJ9aupC8mxpqM6-Wqg_k2Qo0_0p07At6hw",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "",
@@ -195,7 +210,13 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer X85wHcY4U1P8Qe8TReRVTgX-UOHgiSzZn_cWPg6QUz0uQYYutocDoIOrwPe6RIhE-yIk5dKf9szyV3xEvbCL_4URoUBOGMRsrw8TDFJIqLc3KZIKgHBIiYTuOxyugj1AT5n05X0t3C-e2EScR-Vggj5gjtktgcRWOva3VDNF6cimX85-v_iPCXgVO_0p9PmDLv9PYJBihERUYb9X134Njy245uPOGRpwUSeW3_IhdxG4gCNIzu9yz9KnWEq_oYJd1-HYwdazUgJ9aupC8mxpqM6-Wqg_k2Qo0_0p07At6hw",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "",
@@ -314,7 +335,13 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer X85wHcY4U1P8Qe8TReRVTgX-UOHgiSzZn_cWPg6QUz0uQYYutocDoIOrwPe6RIhE-yIk5dKf9szyV3xEvbCL_4URoUBOGMRsrw8TDFJIqLc3KZIKgHBIiYTuOxyugj1AT5n05X0t3C-e2EScR-Vggj5gjtktgcRWOva3VDNF6cimX85-v_iPCXgVO_0p9PmDLv9PYJBihERUYb9X134Njy245uPOGRpwUSeW3_IhdxG4gCNIzu9yz9KnWEq_oYJd1-HYwdazUgJ9aupC8mxpqM6-Wqg_k2Qo0_0p07At6hw",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "",
@@ -343,7 +370,13 @@
 			"name": "POST NORMAS",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT \",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras \",\r\n        \"link\": \"http:\"\r\n    }",
@@ -372,10 +405,16 @@
 			"name": "PUT NORMAS",
 			"request": {
 				"method": "PUT",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlvDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"id\": \"2\",\r\n        \"categoria\": \"TERSTE33S\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"raw": "{\r\n        \"id\": \"26\",\r\n        \"categoria\": \"TERSTE33S hehe\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -383,7 +422,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/2",
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/26",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
@@ -391,7 +430,7 @@
 						"GestaoNormas",
 						"api",
 						"Normas",
-						"2"
+						"26"
 					]
 				}
 			},
@@ -401,7 +440,13 @@
 			"name": "DEL NORMAS",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlvDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{\r\n        \"id\": \"2\",\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
@@ -412,7 +457,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/27",
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/Normas/2789",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
@@ -420,20 +465,117 @@
 						"GestaoNormas",
 						"api",
 						"Normas",
-						"27"
+						"2789"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "TESTES",
+			"name": "TOKEN",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
 				"body": {
-					"mode": "raw",
-					"raw": "{\r\n        \"categoria\": \"TERSTESa\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Murilo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/token",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES TOKEN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Murilo",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44392/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44392",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES NORM",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlvDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
 					"options": {
 						"raw": {
 							"language": "json"
@@ -450,6 +592,84 @@
 					"path": [
 						"api",
 						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES PROC",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer CEEK6Yq8DMunUnVhJNg_i5_hRE3Dv6uTpN07X23xCdT-7xKK0ZflqrzACZ3eh3_X6i27GAPgRuCdcZF-BY3V-cV19naKIZMZrpg_GRVsWa5YpsfNkWDgdcSTxx2XboYeMjy_pMgT8Xzql1qZDHiPXy4OA2m4iBeCoAeHl1xJXtQZQPFlOSu2vMVvBoX4UKGCRLOm4113EHR39NrlupODt_on4UuaigOAkRuDLGAl51287XVeAUp_OyKKbSRWi5NxQrf8zv-ENPu67weVwgRHaBqRZCd5jHmq7yDK-YB6fEIIpJyItYz6RpeM8EtAGquC"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44386/api/Processos/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44386",
+					"path": [
+						"api",
+						"Processos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TESTES AUDIT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer CEEK6Yq8DMunUnVhJNg_i5_hRE3Dv6uTpN07X23xCdT-7xKK0ZflqrzACZ3eh3_X6i27GAPgRuCdcZF-BY3V-cV19naKIZMZrpg_GRVsWa5YpsfNkWDgdcSTxx2XboYeMjy_pMgT8Xzql1qZDHiPXy4OA2m4iBeCoAeHl1xJXtQZQPFlOSu2vMVvBoX4UKGCRLOm4113EHR39NrlupODt_on4UuaigOAkRuDLGAl51287XVeAUp_OyKKbSRWi5NxQrf8zv-ENPu67weVwgRHaBqRZCd5jHmq7yDK-YB6fEIIpJyItYz6RpeM8EtAGquC"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44311/api/Consultorias/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44311",
+					"path": [
+						"api",
+						"Consultorias",
 						""
 					]
 				}
