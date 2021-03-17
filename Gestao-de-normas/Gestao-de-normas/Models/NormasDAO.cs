@@ -19,6 +19,15 @@ namespace Gestao_de_normas.Models
             return listaNormas;
         }
 
+        public List<Norma> ListaNormasExternas()
+        {
+            var caminhoArquivo = HostingEnvironment.MapPath(@"~\App_Data\BaseExterna.json");
+            var json = File.ReadAllText(caminhoArquivo);
+            var listaNormasExternas = JsonConvert.DeserializeObject<List<Norma>>(json);
+
+            return listaNormasExternas;
+        }
+
         public bool ReescreverArquivo(List<Norma> listaNormas)
         {
             var caminhoArquivo = HostingEnvironment.MapPath(@"~\App_Data\Base.json");

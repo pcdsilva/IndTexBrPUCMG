@@ -14,6 +14,28 @@ namespace Gestao_de_normas.Controllers
         [HttpGet]
         [Route("Normas")]
         //[Authorize]
+        public IEnumerable<Norma> RetornarNormasExternas()
+        {
+            NormasDAO normasDAO = new NormasDAO();
+
+            return normasDAO.ListaNormasExternas();
+        }
+
+        // GET: GestaoNormas/api/Normas/5
+        [HttpGet]
+        [Route("Normas/{id:int}")]
+        //[Authorize]
+        public Norma RetornarNormaExternas(int id)
+        {
+            NormasDAO normasDAO = new NormasDAO();
+
+            return normasDAO.ListaNormasExternas().Where(x => x.id == id).FirstOrDefault();
+        }
+
+        // GET: GestaoNormas/api/Normas
+        [HttpGet]
+        [Route("Normas")]
+        //[Authorize]
         public IEnumerable<Norma> RetornarNormas()
         {
             NormasDAO normasDAO = new NormasDAO();
