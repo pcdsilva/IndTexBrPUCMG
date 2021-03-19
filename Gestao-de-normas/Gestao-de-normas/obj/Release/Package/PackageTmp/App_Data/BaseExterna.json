@@ -1,0 +1,47 @@
+[
+  {
+    "id": 10,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 10320:1988",
+    "anoPublicaçao": "1998",
+	  "dataAtualizacao": "01/01/2021",
+    "descricao": "Materiais têxteis – Determinação das alterações dimensionais de tecidos planos e malhas – Lavagem em máquina doméstica automática – Método de ensaio",
+    "link": "https://sindivestuario.org.br/wp-content/uploads/2017/05/E-book-4edi%C3%A7%C3%A3o.pdf"
+  },
+  {
+    "id": 11,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 10677:1989",
+    "anoPublicaçao": "1989",
+	  "dataAtualizacao": "01/01/2021",
+    "descricao": "Materiais têxteis – Determinação do pH do extrato aquoso – Método de ensaio",
+    "link": "https://sindivestuario.org.br/wp-content/uploads/2017/05/E-book-4edi%C3%A7%C3%A3o.pdf"
+  },
+  {
+    "id": 12,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 12999:1993",
+    "anoPublicaçao": "1993",
+	  "dataAtualizacao": "01/01/2021",
+    "descricao": "Material têxtil – Ensaio de resistência à pressão hidrostática – Ensaio de coluna d’água – Método de ensaio",
+    "link": "https://sindivestuario.org.br/wp-content/uploads/2017/05/E-book-4edi%C3%A7%C3%A3o.pdf"
+  },
+  {
+    "id": 13,
+    "categoria": "ACABAMENTOS PARA TÊXTEIS",
+    "nome": "ABNT NBR 13000:1993",
+    "anoPublicaçao": "1993",
+	  "dataAtualizacao": "01/01/2021",
+    "descricao": "Material têxtil – Determinação da hidrofilidade de tecido – Método de ensaio",
+    "link": "https://sindivestuario.org.br/wp-content/uploads/2017/05/E-book-4edi%C3%A7%C3%A3o.pdf"
+  },
+  {
+    "id": 14,
+    "categoria": "ALGODÃO",
+    "nome": "ABNT NBR 11913:1991",
+    "anoPublicaçao": "1991",
+	  "dataAtualizacao": "01/01/2021",
+    "descricao": "Fibras de algodão – Determinação da fi nura (pelo método da resistência à passagem de ar) – Método de ensaio",
+    "link": "https://sindivestuario.org.br/wp-content/uploads/2017/05/E-book-4edi%C3%A7%C3%A3o.pdf"
+  }
+]
