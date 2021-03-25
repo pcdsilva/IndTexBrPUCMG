@@ -88,7 +88,7 @@ function GestaoIndustrial() {
                   <p>{processo.horasEstimadas}</p>
 
                   <strong>Norma:</strong>
-                  <p>{processo.Norma}</p>
+                  <p>{processo.norma}</p>
                 </li>        
                 ) ) }             
             </ul>

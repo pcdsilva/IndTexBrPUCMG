@@ -2,7 +2,7 @@
   "openapi" : "3.0.1",
   "info" : {
     "title" : "SigoGatewayApi",
-    "version" : "2021-03-25 16:43:45UTC"
+    "version" : "2021-03-25 18:23:42UTC"
   },
   "servers" : [ {
     "url" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/{basePath}",
@@ -47,6 +47,23 @@
         }
       }
     },
+    "/GestaoNormas/api/NormasExternas/{proxy+}" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /GestaoNormas/api/NormasExternas/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "ANY",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/GestaoNormas/api/NormasExternas/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    },
     "/GestaoProcessos/api/Processos/{proxy+}" : {
       "x-amazon-apigateway-any-method" : {
         "responses" : {
@@ -76,23 +93,6 @@
           "type" : "http_proxy",
           "httpMethod" : "GET",
           "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/ConsultoriaAssessoria/api/Normas/{proxy}",
-          "connectionType" : "INTERNET",
-          "timeoutInMillis" : 30000
-        }
-      }
-    },
-    "/GestaoNormas/api/NormasExternas/{proxy+}" : {
-      "get" : {
-        "responses" : {
-          "default" : {
-            "description" : "Default response for GET /GestaoNormas/api/NormasExternas/{proxy+}"
-          }
-        },
-        "x-amazon-apigateway-integration" : {
-          "payloadFormatVersion" : "1.0",
-          "type" : "http_proxy",
-          "httpMethod" : "GET",
-          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/GestaoNormas/api/NormasExternas/{proxy}",
           "connectionType" : "INTERNET",
           "timeoutInMillis" : 30000
         }

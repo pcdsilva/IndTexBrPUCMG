@@ -10,7 +10,7 @@ namespace Gestao_de_normas.Controllers
     [RoutePrefix("api")]
     public class GestaoNormasController : ApiController
     {
-        // GET: GestaoNormas/api/Normas
+        // GET: GestaoNormas/api/NormasExternas
         [HttpGet]
         [Route("NormasExternas")]
 
@@ -22,10 +22,10 @@ namespace Gestao_de_normas.Controllers
             return normasDAO.ListaNormasExternas();
         }
 
-        // GET: GestaoNormas/api/Normas/5
+        // GET: GestaoNormas/api/NormasExternas/5
         [HttpGet]
         [Route("NormasExternas/{id:int}")]
-        //[Authorize]
+        [Authorize]
         public Norma RetornarNormaExternas(int id)
         {
             NormasDAO normasDAO = new NormasDAO();

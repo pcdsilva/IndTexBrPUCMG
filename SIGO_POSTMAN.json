@@ -15,7 +15,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer KK6vkyTEObUgauwsJbZu5kgRA-zT-J239pkZkbgMBChTz2H5U4BsWCXuQuTpE_0uLchfrZalNlncmnIrv8lNBV3zfAWu3QuZX4BDQzHnXMXL9iv59z3Z2VaSFZ-i8Yibz8jcDkGFUk8u0PcN74j6_CG9fLOm151faGJErncVVx-a3bhLTjuui4hlsXmbi2bDMVxnidONKoC_5IOizwEt0r8v2jUwg3XECia_cGzJYJO-ugXoOyzhvscZZUykZZ0_iIWho7fXcxNBJLUxs1V8208VAdXWM7JGzaAmXRP5FlM",
+						"value": "bearer 2qaE-3CfpbYg2A_Y2tb4Yhp1IP18M1rllOJ0xTVH335Rl52zLDW2MpJy0HxH7LBHBxeYN9FpFeCVOKydF_81IMwSjJKGT3m2nZZCxQ8ye4vL2krYDGVW4NqVgrwg8rZ5PcLlFouEkCiLAnTi2_xJwxHXjA0Yg7_V40WkAVxRqHlqV-6YzdYNPdjoQAT8aSoMGg0Pv7dwk2CWAUBoyHxqjCRtmdhqHPYJMisCvD4KBO5OilMerpYVhM18gfF2bPsQkzPGNa6McUjJnVytnjy5obgV7DRRcBzaqm4lRpIV08J3-mOZxocH7-fill4yMOKw",
 						"type": "text"
 					}
 				],
@@ -175,7 +175,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer obQ3KEvdEIQFrki1BHyG3E9pizIgEy0EaQGr84_-liKv_81bDj1L8FKWIso-4kFEgo_m34jJ9pHKD1vDjnHCfW2g4FDm5WK4c3u16_J2md4D12HDgmmMplB4EGNLdaQ4ojb-ePm-M1Z8J3Kzk0S5a34rggFPiPqXXzSIMltCv930JNSfivsPJ9R7AepSWGJn58LZB1pRdahTQZsLKDQ4jrONl7VCZj5vjARizBVOM1P6v97U0VULk7HQPZ5gNIqHJhRnyVU36facmSO12d9xTpRu4SqmCjTLicnug-d0JZkZAwyOY4dxZilc9Vicx4KN",
+						"value": "bearer 2qaE-3CfpbYg2A_Y2tb4Yhp1IP18M1rllOJ0xTVH335Rl52zLDW2MpJy0HxH7LBHBxeYN9FpFeCVOKydF_81IMwSjJKGT3m2nZZCxQ8ye4vL2krYDGVW4NqVgrwg8rZ5PcLlFouEkCiLAnTi2_xJwxHXjA0Yg7_V40WkAVxRqHlqV-6YzdYNPdjoQAT8aSoMGg0Pv7dwk2CWAUBoyHxqjCRtmdhqHPYJMisCvD4KBO5OilMerpYVhM18gfF2bPsQkzPGNa6McUjJnVytnjy5obgV7DRRcBzaqm4lRpIV08J3-mOZxocH7-fill4yMOKw",
 						"type": "text"
 					}
 				],
@@ -189,7 +189,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/2",
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
@@ -197,7 +197,7 @@
 						"ConsultoriaAssessoria",
 						"api",
 						"Consultorias",
-						"2"
+						""
 					]
 				}
 			},
@@ -338,7 +338,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer X85wHcY4U1P8Qe8TReRVTgX-UOHgiSzZn_cWPg6QUz0uQYYutocDoIOrwPe6RIhE-yIk5dKf9szyV3xEvbCL_4URoUBOGMRsrw8TDFJIqLc3KZIKgHBIiYTuOxyugj1AT5n05X0t3C-e2EScR-Vggj5gjtktgcRWOva3VDNF6cimX85-v_iPCXgVO_0p9PmDLv9PYJBihERUYb9X134Njy245uPOGRpwUSeW3_IhdxG4gCNIzu9yz9KnWEq_oYJd1-HYwdazUgJ9aupC8mxpqM6-Wqg_k2Qo0_0p07At6hw",
+						"value": "bearer N0gQBRipn70x2WYASBzuOHt5LmBtqgLA8_H6elQYTF0FhqF9z5i94m2jusXLLHwDP-aB0wGh5mo8tKBPvGPsJu-4MBTxTR7K3pVn6Jole-ZEzHf-BbvBnI41iV1chQ7Kult-uRnlOD6pRa0VKL0ABSxiY4UQvrDHg8d2P_RPrY4pNzN3QjcOjUAoQA1f_TOwxhs3OR2MyyZvniw44Nv7B0L08Ge7xQSHKfGX_I05aNksKJdMMQ2Zp9hKDUIJ4YaHDu-vQyxB8z0DI8o-gXiJqzvy6ADgbkT_mlFTsLiw4i0GiVF1qHk12VWdP35cX4rJ",
 						"type": "text"
 					}
 				],
@@ -360,6 +360,44 @@
 						"GestaoNormas",
 						"api",
 						"Normas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET NORMAS EXTERNAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer N0gQBRipn70x2WYASBzuOHt5LmBtqgLA8_H6elQYTF0FhqF9z5i94m2jusXLLHwDP-aB0wGh5mo8tKBPvGPsJu-4MBTxTR7K3pVn6Jole-ZEzHf-BbvBnI41iV1chQ7Kult-uRnlOD6pRa0VKL0ABSxiY4UQvrDHg8d2P_RPrY4pNzN3QjcOjUAoQA1f_TOwxhs3OR2MyyZvniw44Nv7B0L08Ge7xQSHKfGX_I05aNksKJdMMQ2Zp9hKDUIJ4YaHDu-vQyxB8z0DI8o-gXiJqzvy6ADgbkT_mlFTsLiw4i0GiVF1qHk12VWdP35cX4rJ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{AWSGATEWAY}}/GestaoNormas/api/NormasExternas/",
+					"host": [
+						"{{AWSGATEWAY}}"
+					],
+					"path": [
+						"GestaoNormas",
+						"api",
+						"NormasExternas",
 						""
 					]
 				}
@@ -487,7 +525,7 @@
 					"urlencoded": [
 						{
 							"key": "username",
-							"value": "Murilo",
+							"value": "murilo@sigo.com.br",
 							"type": "text"
 						},
 						{
@@ -608,7 +646,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlvDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"value": "bearer A2bwIr6gibk_j4BbAHIUJogY_Cf2gmWuR3kZikq4d39Mp3_Ft2gDVHlsQLZuSiLhS5uLPmuTksVISZPo5yfmS3-oaUA1D2v3sqnIX_G2hYFLTAGJEQ5DTHH2EZN39dToSXH4wkbXODc6cEAfGcIV6QhzEi7svX54eeT0L-1rhbxzxLIQ3n6PZnLgK5ehIhhLa-qwKsVb_NmdAwkbJFQme_2trl5WCA5XwUkudOKahBXa0QR1Y9SndDmhh18c3aAg6i61W0uQ8JVQAeU8OMLCYT4ZbLpVIePH_lqUQ27f_IhARPg8BvCJJ7mU3easq4lS",
 						"type": "text"
 					}
 				],
@@ -622,7 +660,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:44392/api/Normas/",
+					"raw": "https://localhost:44392/api/NormasExternas/",
 					"protocol": "https",
 					"host": [
 						"localhost"
@@ -630,7 +668,7 @@
 					"port": "44392",
 					"path": [
 						"api",
-						"Normas",
+						"NormasExternas",
 						""
 					]
 				}
