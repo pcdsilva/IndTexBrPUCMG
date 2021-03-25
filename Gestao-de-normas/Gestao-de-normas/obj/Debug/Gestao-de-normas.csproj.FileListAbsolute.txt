@@ -268,6 +268,7 @@ C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\obj\Debug\Gestao-d
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\obj\Debug\Gestao-de-normas.pdb
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\obj\Debug\Gestao-de-normas.csprojAssemblyReference.cache
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\App_Data\BaseExterna.json
+<<<<<<< HEAD
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\librdkafka\x86\librdkafka.dll
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\librdkafka\x86\librdkafkacpp.dll
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\librdkafka\x86\libzstd.dll
@@ -386,3 +387,6 @@ C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\System.Buffers
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\System.Memory.xml
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\System.Numerics.Vectors.xml
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-de-normas\Gestao-de-normas\bin\System.Runtime.CompilerServices.Unsafe.xml
+=======
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-de-normas\Gestao-de-normas\bin\App_Data\BaseExterna.json
+>>>>>>> 4d68fb57fcb57877c7ab2ce1a9fd2598ec23097e

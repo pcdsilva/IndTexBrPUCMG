@@ -177,3 +177,4 @@ C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-de-normas\Gestao-de-normas\obj\Re
 C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-de-normas\Gestao-de-normas\obj\Release\Gestao-de-normas.dll
 C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-de-normas\Gestao-de-normas\obj\Release\Gestao-de-normas.pdb
 C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-de-normas\Gestao-de-normas\bin\App_Data\Base.json
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-de-normas\Gestao-de-normas\bin\App_Data\BaseExterna.json

@@ -12,7 +12,7 @@ namespace Gestao_de_normas.Controllers
     {
         // GET: GestaoNormas/api/Normas
         [HttpGet]
-        [Route("Normas")]
+        [Route("NormasExternas")]
 
         [Authorize]
         public IEnumerable<Norma> RetornarNormasExternas()
@@ -24,7 +24,7 @@ namespace Gestao_de_normas.Controllers
 
         // GET: GestaoNormas/api/Normas/5
         [HttpGet]
-        [Route("Normas/{id:int}")]
+        [Route("NormasExternas/{id:int}")]
         //[Authorize]
         public Norma RetornarNormaExternas(int id)
         {

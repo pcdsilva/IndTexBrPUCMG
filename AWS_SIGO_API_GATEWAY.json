@@ -1,0 +1,119 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "SigoGatewayApi",
+    "version" : "2021-03-18 23:46:34UTC"
+  },
+  "servers" : [ {
+    "url" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/{basePath}",
+    "variables" : {
+      "basePath" : {
+        "default" : ""
+      }
+    }
+  } ],
+  "paths" : {
+    "/ConsultoriaAcessoria/api/Consultorias/{proxy+}" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /ConsultoriaAcessoria/api/Consultorias/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "ANY",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/ConsultoriaAcessoria/api/Consultorias/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    },
+    "/GestaoNormas/api/Normas/{proxy+}" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /GestaoNormas/api/Normas/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "ANY",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/GestaoNormas/api/Normas/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    },
+    "/GestaoProcessos/api/Processos/{proxy+}" : {
+      "x-amazon-apigateway-any-method" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for ANY /GestaoProcessos/api/Processos/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "ANY",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/GestaoProcessos/api/Processos/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    },
+    "/ConsultoriaAcessoria/api/Normas/{proxy+}" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /ConsultoriaAcessoria/api/Normas/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "GET",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/ConsultoriaAcessoria/api/Normas/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    },
+    "/GestaoProcessos/api/Normas/{proxy+}" : {
+      "get" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for GET /GestaoProcessos/api/Normas/{proxy+}"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "GET",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/GestaoProcessos/api/Normas/{proxy}",
+          "connectionType" : "INTERNET",
+          "timeoutInMillis" : 30000
+        }
+      }
+    },
+    "/token" : {
+      "post" : {
+        "responses" : {
+          "default" : {
+            "description" : "Default response for POST /token"
+          }
+        },
+        "x-amazon-apigateway-integration" : {
+          "payloadFormatVersion" : "1.0",
+          "type" : "http_proxy",
+          "httpMethod" : "POST",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/GestaoNormas/token",
+          "connectionType" : "INTERNET"
+        }
+      }
+    }
+  },
+  "x-amazon-apigateway-importexport-version" : "1.0"
+}
