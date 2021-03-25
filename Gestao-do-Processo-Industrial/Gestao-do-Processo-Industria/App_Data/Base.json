@@ -6,7 +6,8 @@
     "custo": 500.0,
     "QatdeMarquinasUtilizadas": 2,
     "horasEstimadas": 8,
-    "norma": null
+    "norma": "ABNT NBR 11913:1991",
+    "status": 1
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "custo": 200.0,
     "QatdeMarquinasUtilizadas": 1,
     "horasEstimadas": 4,
-    "norma": null
+    "norma": "ABNT NBR 11913:1991",
+    "status": 1
   },
   {
     "id": 3,
@@ -24,6 +26,8 @@
     "custo": 300.0,
     "QatdeMarquinasUtilizadas": 5,
     "horasEstimadas": 6,
-    "norma": null
+    "norma": "ABNT NBR 11913:1991",
+    "status": 0
   }
+  //status 1 - em operação, estatus 0 = em falha
 ]

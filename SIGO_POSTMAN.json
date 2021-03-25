@@ -15,7 +15,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer WxEz80STvdAIu_pk8av7OMu5N5xhgR8lP6G1asCAZp9QvF-NLaNITtnECO0CJDYFDi-HsVX5LNobpPEdEU2Tzp2JCFCGqgXIWu7NIrDscGPdwTvCUSFogKU-QJJLMImbG7rlkmShy-fup7Cv585h3ixYshvJZ-HHmcVe96136j4OcBgFXhGw50wDqeNit7t_B0G53Ik4WoyiWP6Wp2_IT9xfio1y8morNEothVdROVRo9qXEh-t0JclJ2GUvBPGq2iP0_P5GdCwUhGquhZHm_-6Zb_iAFP6LhocQEzZuNJqCwfUjDCI0BNFc5ebm31yT",
+						"value": "bearer KK6vkyTEObUgauwsJbZu5kgRA-zT-J239pkZkbgMBChTz2H5U4BsWCXuQuTpE_0uLchfrZalNlncmnIrv8lNBV3zfAWu3QuZX4BDQzHnXMXL9iv59z3Z2VaSFZ-i8Yibz8jcDkGFUk8u0PcN74j6_CG9fLOm151faGJErncVVx-a3bhLTjuui4hlsXmbi2bDMVxnidONKoC_5IOizwEt0r8v2jUwg3XECia_cGzJYJO-ugXoOyzhvscZZUykZZ0_iIWho7fXcxNBJLUxs1V8208VAdXWM7JGzaAmXRP5FlM",
 						"type": "text"
 					}
 				],
@@ -189,12 +189,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Consultorias/2",
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/2",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
 					"path": [
-						"ConsultoriaAcessoria",
+						"ConsultoriaAssessoria",
 						"api",
 						"Consultorias",
 						"2"
@@ -227,12 +227,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Normas/",
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Normas/",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
 					"path": [
-						"ConsultoriaAcessoria",
+						"ConsultoriaAssessoria",
 						"api",
 						"Normas",
 						""
@@ -256,12 +256,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Consultorias/",
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
 					"path": [
-						"ConsultoriaAcessoria",
+						"ConsultoriaAssessoria",
 						"api",
 						"Consultorias",
 						""
@@ -285,12 +285,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Normas/",
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Normas/",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
 					"path": [
-						"ConsultoriaAcessoria",
+						"ConsultoriaAssessoria",
 						"api",
 						"Normas",
 						""
@@ -314,12 +314,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/ConsultoriaAcessoria/api/Consultorias/4",
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/4",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
 					"path": [
-						"ConsultoriaAcessoria",
+						"ConsultoriaAssessoria",
 						"api",
 						"Consultorias",
 						"4"
@@ -569,13 +569,13 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlvDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"value": "bearer mQUMDZ9o8aWA9aKnwiD1VlClHQg29SnMGjquJI3V876r-YRbbw7jfxQGPpkzjKx34ogBJIR_Cg9sTFNSRRZc9h92SkX5tRpR463QR1OA3KkxQ_iXr2eG7qBDtoJtiW8Z__JPeenVz7ufuZRCzPOLwxxdJgOsMQrK6OQRGrZvwMh06mvp5zS43LV29x_YS2IhQfaPwovXdmZT1tjJEJDiH2EszFqtPXaBgv1KE1p6Hqr1h6oSK8I2tDn0hKypZ78tXHUtOkrLSCiDK282oOHq5PLZjvfFQfevSa4REse8iZSJoooSsQm16I53XZW-Hg9o",
 						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [],
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 12,\r\n        \"categoria\": \"TERSTESpub\",\r\n        \"nome\": \"ABNT \",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"dataAtualizacao\": \"01/01/2021\",\r\n        \"descricao\": \"Fibras \",\r\n        \"link\": \"http:\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -648,7 +648,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "bearer CEEK6Yq8DMunUnVhJNg_i5_hRE3Dv6uTpN07X23xCdT-7xKK0ZflqrzACZ3eh3_X6i27GAPgRuCdcZF-BY3V-cV19naKIZMZrpg_GRVsWa5YpsfNkWDgdcSTxx2XboYeMjy_pMgT8Xzql1qZDHiPXy4OA2m4iBeCoAeHl1xJXtQZQPFlOSu2vMVvBoX4UKGCRLOm4113EHR39NrlupODt_on4UuaigOAkRuDLGAl51287XVeAUp_OyKKbSRWi5NxQrf8zv-ENPu67weVwgRHaBqRZCd5jHmq7yDK-YB6fEIIpJyItYz6RpeM8EtAGquC"
+						"value": "bearer mQUMDZ9o8aWA9aKnwiD1VlClHQg29SnMGjquJI3V876r-YRbbw7jfxQGPpkzjKx34ogBJIR_Cg9sTFNSRRZc9h92SkX5tRpR463QR1OA3KkxQ_iXr2eG7qBDtoJtiW8Z__JPeenVz7ufuZRCzPOLwxxdJgOsMQrK6OQRGrZvwMh06mvp5zS43LV29x_YS2IhQfaPwovXdmZT1tjJEJDiH2EszFqtPXaBgv1KE1p6Hqr1h6oSK8I2tDn0hKypZ78tXHUtOkrLSCiDK282oOHq5PLZjvfFQfevSa4REse8iZSJoooSsQm16I53XZW-Hg9o"
 					}
 				],
 				"body": {
@@ -687,7 +687,7 @@
 					{
 						"key": "Authorization",
 						"type": "text",
-						"value": "bearer CEEK6Yq8DMunUnVhJNg_i5_hRE3Dv6uTpN07X23xCdT-7xKK0ZflqrzACZ3eh3_X6i27GAPgRuCdcZF-BY3V-cV19naKIZMZrpg_GRVsWa5YpsfNkWDgdcSTxx2XboYeMjy_pMgT8Xzql1qZDHiPXy4OA2m4iBeCoAeHl1xJXtQZQPFlOSu2vMVvBoX4UKGCRLOm4113EHR39NrlupODt_on4UuaigOAkRuDLGAl51287XVeAUp_OyKKbSRWi5NxQrf8zv-ENPu67weVwgRHaBqRZCd5jHmq7yDK-YB6fEIIpJyItYz6RpeM8EtAGquC"
+						"value": "bearer mQUMDZ9o8aWA9aKnwiD1VlClHQg29SnMGjquJI3V876r-YRbbw7jfxQGPpkzjKx34ogBJIR_Cg9sTFNSRRZc9h92SkX5tRpR463QR1OA3KkxQ_iXr2eG7qBDtoJtiW8Z__JPeenVz7ufuZRCzPOLwxxdJgOsMQrK6OQRGrZvwMh06mvp5zS43LV29x_YS2IhQfaPwovXdmZT1tjJEJDiH2EszFqtPXaBgv1KE1p6Hqr1h6oSK8I2tDn0hKypZ78tXHUtOkrLSCiDK282oOHq5PLZjvfFQfevSa4REse8iZSJoooSsQm16I53XZW-Hg9o"
 					}
 				],
 				"body": {

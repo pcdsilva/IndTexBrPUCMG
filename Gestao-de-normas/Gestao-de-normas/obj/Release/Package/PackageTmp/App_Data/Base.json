@@ -2,7 +2,7 @@
   {
     "id": 1,
     "categoria": "TERMINOLOGIA E SIMBOLOGIA TÊXTIL",
-    "nome": "ABNT NBR 12744:1993",
+    "nome": "INTERNA 01",
     "anoPublicaçao": "1993",
     "dataAtualizacao": "01/01/2021",
     "descricao": "Fibras têxteis – Classificação.",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "categoria": "TERMINOLOGIA E SIMBOLOGIA TÊXTIL",
-    "nome": "ABNT NBR NM ISO 3758:2010",
+    "nome": "INTERNA 02",
     "anoPublicaçao": "2010",
     "dataAtualizacao": "01/01/2021",
     "descricao": "Têxteis – Códigos de cuidado usando símbolos (ISO 3758:2005, IDT)",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
-    "nome": "ABNT NBR 8427:1984",
+    "nome": "INTERNA 03",
     "anoPublicaçao": "1984",
     "dataAtualizacao": "01/01/2021",
     "descricao": "Emprego do sistema tex para expressar títulos têxteis – Procedimento",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
-    "nome": "ABNT NBR 12251:1990",
+    "nome": "INTERNA 04",
     "anoPublicaçao": "1990",
     "dataAtualizacao": "01/01/2021",
     "descricao": "Designação dos fi os no sistema TEX – Procedimento",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
-    "nome": "ABNT NBR 12299:1991",
+    "nome": "INTERNA 05",
     "anoPublicaçao": "1991",
     "dataAtualizacao": "01/01/2021",
     "descricao": "Cálculo da massa comercial de fi bras têxteis – Procedimento",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "categoria": "MASSAS TÊXTEIS, INCLUINDO TITULAGEM",
-    "nome": "ABNT NBR 13372:1995",
+    "nome": "INTERNA 06",
     "anoPublicaçao": "1995",
     "dataAtualizacao": "01/01/2021",
     "descricao": "Mistura de fibra – Análise quantitativa – Eliminação prévia de matérias não fibrosas – Método de ensaio",
@@ -56,28 +56,10 @@
   {
     "id": 7,
     "categoria": "SOLIDEZ DE COR EM PRODUTOS TÊXTEIS",
-    "nome": "ABNT NBR ISO 105-A01:2011",
+    "nome": "INTERNA 07",
     "anoPublicaçao": "2011",
     "dataAtualizacao": "01/01/2021",
     "descricao": "Têxteis – Ensaios de solidez da cor – Parte A01: Princípios gerais de ensaio",
-    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
-  },
-  {
-    "id": 8,
-    "categoria": "SOLIDEZ DE COR EM PRODUTOS TÊXTEIS",
-    "nome": "ABNT NBR ISO 105-F02:2010",
-    "anoPublicaçao": "2010",
-    "dataAtualizacao": "01/01/2021",
-    "descricao": "Têxteis – Ensaios de solidez da cor – Parte F02: Especificação para tecidos-testemunha de algodão e viscose",
-    "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
-  },
-  {
-    "id": 9,
-    "categoria": "SOLIDEZ DE COR EM PRODUTOS TÊXTEIS",
-    "nome": "ABNT NBR ISO 105-F03:2007",
-    "anoPublicaçao": "2007",
-    "dataAtualizacao": "01/01/2021",
-    "descricao": "Têxteis – Ensaios de solidez da cor – Parte F03: Especificação para tecido-testemunha de poliamida",
     "link": "http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf"
   }
 ]

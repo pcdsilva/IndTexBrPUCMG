@@ -20,10 +20,10 @@
                "appPool": "MyFirstPool"
                }
           },
-          {"name": "Consultoria-e-Acessoria",
+          {"name": "Consultoria-e-Assessoria",
             "parameters": {
-               "appBundle": "Consultoria-e-Acessoria.zip",
-               "iisPath": "/ConsultoriaAcessoria",
+               "appBundle": "Consultoria-e-Assessoria.zip",
+               "iisPath": "/ConsultoriaAssessoria",
                "appPool": "MySecondPool"
               }
           },

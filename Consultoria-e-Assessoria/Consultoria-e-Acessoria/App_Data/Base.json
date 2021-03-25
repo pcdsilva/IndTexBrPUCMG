@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "departamento": "Segurança e Qualidade",
+    "setor": "Inspeção Qualidade Fornecedores",
+    "razaoSocial": "CGA Consultoria Ambiental Ltda",
+    "nomeFantasia": "CGA GEO Consultoria Ambiental",
+    "cnpj": "26.629.357/0001-27",
+    "dtContratacao": "15/01/2021",
+    "periodoContratacao": "10 meses",
+    "ativo": "Sim",
+    "dtInicio": "28/01/2021",
+    "dtTermino": "28/11/2021",
+    "norma": "INTERNA01",
+    "descricao": "Consultoria"
+  },
+  {
+    "id": 2,
+    "departamento": "Segurança",
+    "setor": "Inspeção de Segurança Fornecedores",
+    "razaoSocial": "CGS Consultoria de Segurança Ltda",
+    "nomeFantasia": "CGS GEO Consultoria Segurança",
+    "cnpj": "70.474.234/0001-56",
+    "dtContratacao": "20/01/2021",
+    "periodoContratacao": "12 meses",
+    "ativo": "Sim",
+    "dtInicio": "30/01/2021",
+    "dtTermino": "31/12/2021",
+    "norma": "ABNT NBR 10320:1988",
+    "descricao": "Segurança"
+  },
+  {
+    "id": 3,
+    "departamento": "Fiscalização ",
+    "setor": "Inspeção Fiscal Fornecedores",
+    "razaoSocial": "CGF Consultoria Fiscal Ltda",
+    "nomeFantasia": "CGF GEO Consultoria Fiscal",
+    "cnpj": "12.858.554/0001-03",
+    "dtContratacao": "20/01/2021",
+    "periodoContratacao": "24 meses",
+    "ativo": "Sim",
+    "dtInicio": "30/01/2021",
+    "dtTermino": "31/11/2022",
+    "norma": "ABNT NBR 10677:1989",
+    "descricao": "Fiscalização"
+  }
+]

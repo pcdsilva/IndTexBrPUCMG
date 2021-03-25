@@ -2,7 +2,7 @@
   "openapi" : "3.0.1",
   "info" : {
     "title" : "SigoGatewayApi",
-    "version" : "2021-03-18 23:46:34UTC"
+    "version" : "2021-03-25 16:08:03UTC"
   },
   "servers" : [ {
     "url" : "https://wu63epzr79.execute-api.us-east-1.amazonaws.com/{basePath}",
@@ -13,18 +13,18 @@
     }
   } ],
   "paths" : {
-    "/ConsultoriaAcessoria/api/Consultorias/{proxy+}" : {
+    "/ConsultoriaAssessoria/api/Consultorias/{proxy+}" : {
       "x-amazon-apigateway-any-method" : {
         "responses" : {
           "default" : {
-            "description" : "Default response for ANY /ConsultoriaAcessoria/api/Consultorias/{proxy+}"
+            "description" : "Default response for ANY /ConsultoriaAssessoria/api/Consultorias/{proxy+}"
           }
         },
         "x-amazon-apigateway-integration" : {
           "payloadFormatVersion" : "1.0",
           "type" : "http_proxy",
           "httpMethod" : "ANY",
-          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/ConsultoriaAcessoria/api/Consultorias/{proxy}",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/ConsultoriaAssessoria/api/Consultorias/{proxy}",
           "connectionType" : "INTERNET",
           "timeoutInMillis" : 30000
         }
@@ -64,18 +64,18 @@
         }
       }
     },
-    "/ConsultoriaAcessoria/api/Normas/{proxy+}" : {
+    "/ConsultoriaAssessoria/api/Normas/{proxy+}" : {
       "get" : {
         "responses" : {
           "default" : {
-            "description" : "Default response for GET /ConsultoriaAcessoria/api/Normas/{proxy+}"
+            "description" : "Default response for GET /ConsultoriaAssessoria/api/Normas/{proxy+}"
           }
         },
         "x-amazon-apigateway-integration" : {
           "payloadFormatVersion" : "1.0",
           "type" : "http_proxy",
           "httpMethod" : "GET",
-          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/ConsultoriaAcessoria/api/Normas/{proxy}",
+          "uri" : "http://sigo-env.eba-t3tfpq7k.us-east-1.elasticbeanstalk.com/ConsultoriaAssessoria/api/Normas/{proxy}",
           "connectionType" : "INTERNET",
           "timeoutInMillis" : 30000
         }

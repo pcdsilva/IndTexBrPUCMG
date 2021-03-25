@@ -9,9 +9,9 @@ namespace Gestao_de_normas.Base
         {
             return new List<Usuario>
             {
-                new Usuario { Nome = "Murilo", Senha = "123456", Perfil = new string[] { Perfil.Admin} },
-                new Usuario { Nome = "Paulo", Senha = "123456" , Perfil = new string[] { Perfil.Admin} },
-                new Usuario { Nome = "Andrea", Senha = "123456", Perfil = new string[] { Perfil.User } }
+                new Usuario { Nome = "murilo@sigo.com.br", Senha = "123456", Perfil = new string[] { Perfil.Admin} },
+                new Usuario { Nome = "paulo@sigo.com.br", Senha = "123456" , Perfil = new string[] { Perfil.Admin} },
+                new Usuario { Nome = "andrea@sigo.com.br", Senha = "123456", Perfil = new string[] { Perfil.User } }
             };
         }
     }

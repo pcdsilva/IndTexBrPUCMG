@@ -872,3 +872,17 @@ C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-do-Processo-Industrial\Gestao-do-Processo-Ind
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industrial.csproj.CopyComplete
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industria.dll
 C:\_Fonte-TCC\IndTexBrPUCMG\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\obj\Debug\Gestao-do-Processo-Industria.pdb
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x86\librdkafka.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x86\librdkafkacpp.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x86\libzstd.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x86\msvcp120.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x86\msvcr120.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x86\zlib.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x64\librdkafka.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x64\librdkafkacpp.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x64\libzstd.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x64\msvcp120.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x64\msvcr120.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\librdkafka\x64\zlib.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\Confluent.Kafka.dll
+C:\Users\Murilo\Documents\ProjetoTCCPUC\Gestao-do-Processo-Industrial\Gestao-do-Processo-Industria\bin\Confluent.Kafka.xml

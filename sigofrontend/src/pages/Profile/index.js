@@ -1,84 +1,65 @@
-﻿import React ,{useState,  useEffect} from 'react';
+﻿import React ,{useState} from 'react';
 import {Link, useHistory} from 'react-router-dom';
-import {FiPower, FiTrash2} from 'react-icons/fi';
+import {FiPower, FiAlignJustify} from 'react-icons/fi';
 
 import api from '../../services/api';
 
 import './styles.css';
 
-import logoImg from '../../assets/logo.svg'
+import logoImg from '../../assets/logo.jpeg'
 
 function Profile() {
+
+
   const history = useHistory();
+
+  const [active, setActive] = useState(false)
   
-  const[incidents, setIncidents] = useState([]);
-  const ongName = localStorage.getItem('ongName');
-  const ongId = localStorage.getItem('ongId');
+  const userName = localStorage.getItem('userName');
+  const token = localStorage.getItem('token');
+  let userRole = localStorage.getItem('userRole')
 
-  //execuutar uma ação parametros é a função e quando será executado, ou seja a variavel q muda. Array vazio executa uma vez só
-  //Ou seja, executar uma ação idependente do usuário solicitar (carregar casos de uma ong)
-  useEffect(()=>{
-    api.get('profile', {
-      headers: {
-        Authorization: ongId
-      }
-    }).then(response=>{
-        setIncidents(response.data);
-    })
-  }, [ongId]);
-
-  async function handleDeleteIncident(id){
-    try{
-      await api.delete(`incidents/${id}`, {
-        headers:{
-          Authorization: ongId
-        }
-      });
-
-      setIncidents(incidents.filter(incident=> incident.id !== id));
-    } catch(err){
-      alert('Erro ao deletar caso, tente novamente')
-    }
-  }
-
-   function handleLogout(id){
-    localStorage.clear();
-
+  if(token === null || userRole === null || userName === null)
     history.push('/');
-  }
+  else
+    userRole = userRole.substring(2, 15);  
 
+    function handleLogout(id){
+      localStorage.clear();
+      history.push('/');
+    }
+
+    
     return ( 
-        <div className="profile-container">
-            <header>
-              <img src = {logoImg} alt = "Be The Hero" />
-              <span>Bem vinda,  {ongName}</span>
-
-              <Link className ="button" to="/incidents/new">Cadastrar novo caso</Link>
-              <button onClick={handleLogout} type = 'button'>
-                  <FiPower size = {18} color = "#E02041" />
-              </button>
-            </header>
-            <h1>Casos Cadastrados</h1>
-
-            <ul>
-              {incidents.map(incident => (
-                  <li key={incident.id}> 
-                  <strong>CASO:</strong>
-                  <p>{incident.title}</p>
-
-                  <strong>DESCRIÇÃO:</strong>
-                  <p>{incident.description}</p>
-
-                  <strong>VALOR:</strong>
-                  <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(incident.value)}</p>
-
-                  <button onClick={() => handleDeleteIncident(incident.id) } type ="button">
-                      <FiTrash2 size = {20} color = "#a8a8b3" />
+        <div className="profile-container"  >
+                         
+                      <div className="sidenav" className={`${active ? 'sidenav' : 'sidenavHiden'}`}> 
+                      <button className="buttonsidebar" onClick={() => { setActive(!active) }} type = 'button'   >
+                        <FiAlignJustify size = {25} color = "#581919" />
+                      </button>      
+                        <a href="/profile">Home</a>
+                        <a href="/consultorias">Consultorias</a>
+                        <a href="/normas">Normas</a>
+                        <a href="/gestaoindustrial">Gestão Industrial</a>
+                      </div>   
+            
+            <header >
+                  <button onClick={() => { setActive(!active) }} type = 'button'   >
+                    <FiAlignJustify size = {25} color = "#581919" />
                   </button>
-                </li>
-                ) ) }        
-            </ul>
-        </div>
+                  <img src = {logoImg} alt = "S.I.G.O." />
+                  <button  onClick={handleLogout} type = 'button' >
+                    <FiPower size = {25} color = "#581919" />
+                  </button>
+            </header>     
+
+             <div className="maininfo">  
+             <h1>Bem vindo,  {userName} ({userRole}) </h1>
+            <Link className ="button" to="/consultorias">Consultorias</Link>
+            <Link className ="button" to="/normas">Normas</Link>
+            <Link className ="button" to="/gestaoindustrial">Gestão Industrial</Link>
+            </div>
+            </div>
       );
 }
 

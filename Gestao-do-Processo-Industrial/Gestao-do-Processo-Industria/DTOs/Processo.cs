@@ -8,6 +8,7 @@
         public decimal custo { get; set; }
         public int QatdeMarquinasUtilizadas { get; set; }
         public int horasEstimadas { get; set; }
-        public Norma norma { get; set; }
+        public string norma { get; set; }
+        public int status { get; set; }
     }
 }
