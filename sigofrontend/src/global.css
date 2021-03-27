@@ -187,7 +187,7 @@ margin-right: 18px;
     .profile-container  ul{
         display: grid;
         grid-template-columns: repeat(1,100%);
-        grid-gap: 24px;
+        grid-gap: 20px;
         list-style: none;
     }
 
@@ -234,7 +234,7 @@ margin-right: 18px;
 
     .profile-container  ul li p:hover{
         filter: brightness(10%);
-        }
+    }
 
    .profile-container  ul li strong:hover{
             filter: brightness(10%);
@@ -301,6 +301,25 @@ margin-right: 18px;
      .buttonBusca:hover{
         border-color: #999;
     }
+
+    .buttonAdd:hover{
+        filter: brightness(80%);
+    }
+
+    .statusativo{
+        color: darkgreen !important;
+        font-weight: bold;
+   }
+
+    .statusinativo{
+        color: red  !important;
+        font-weight: bold;
+   }
+
+   .inputFloat{
+       padding-bottom: 12px;
+   }
+
 
 
 

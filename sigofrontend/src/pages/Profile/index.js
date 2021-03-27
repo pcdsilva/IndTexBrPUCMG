@@ -10,10 +10,9 @@ import logoImg from '../../assets/logo.jpeg'
 
 function Profile() {
 
-
   const history = useHistory();
 
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
   
   const userName = localStorage.getItem('userName');
   const token = localStorage.getItem('token');

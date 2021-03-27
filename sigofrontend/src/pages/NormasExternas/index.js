@@ -12,7 +12,8 @@ function NormasExternas() {
 
   const history = useHistory();
 
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
+  const [idBusca, setIdBusca] = useState(0);
   const [normas, setNormas] = useState([]);  
   const token = localStorage.getItem('token');
 
@@ -32,6 +33,20 @@ function NormasExternas() {
   function handleLogout(id){
       localStorage.clear();
       history.push('/');
+    }
+
+    function handleBuscaNorma(id){
+      if(id == ""){
+        api.get(`https://wu63epzr79.execute-api.us-east-1.amazonaws.com//GestaoNormas//api//NormasExternas//`, {
+        headers: {
+            Authorization:  'bearer ' + token
+          }
+          }).then(response=>{
+            setNormas(response.data); })
+        }   
+        else{
+          setNormas(normas.filter(norma=> norma.id == id)); 
+        }  
     }
     
     return ( 
@@ -61,9 +76,9 @@ function NormasExternas() {
              <h1>Normas Externas</h1>        
              </div>
              <div className="buscariten">  
-             <input className="inputBusca" placeholder = "Buscar Norma Externa"     />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar Norma Externa"     />
              
-             <button className="buttonBusca" type ="button">
+             <button onClick={() => handleBuscaNorma(idBusca) } className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
               </button>   
 
@@ -75,20 +90,20 @@ function NormasExternas() {
                   <strong>Nome:</strong>
                   <p>{norma.nome}</p>
 
-                  <strong>Categoria</strong>
+                  <strong>Categoria:</strong>
                   <p>{norma.categoria}</p>
 
                   <strong>Ano Publicação:</strong>
                   <p>{norma.anoPublicaçao}</p>
 
-                  <strong>Atualizada em::</strong>
+                  <strong>Atualizada em:</strong>
                   <p>{norma.dataAtualizacao}</p>
 
                   <strong>Descrição:</strong>
                   <p>{norma.descricao}</p>
 
                   <strong>Link do Documento:</strong>
-                  <p>{norma.link}</p>
+                  <div><p><a className = 'button'  target="_blank" href={norma.link}>Acessar</a></p></div>
                 </li>        
                 ) ) }             
             </ul>

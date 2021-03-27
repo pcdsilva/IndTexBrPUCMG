@@ -12,7 +12,8 @@ function GestaoIndustrial() {
 
   const history = useHistory();
 
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
+  const [idBusca, setIdBusca] = useState(0);
   const [processos, setProcessos] = useState([]);  
   const token = localStorage.getItem('token');
 
@@ -32,6 +33,20 @@ function GestaoIndustrial() {
   function handleLogout(id){
       localStorage.clear();
       history.push('/');
+    }
+
+    function handleBuscaProcesso(id){
+      if(id == ""){
+        api.get(`https://wu63epzr79.execute-api.us-east-1.amazonaws.com//GestaoProcessos//api//Processos//`, {
+        headers: {
+            Authorization:  'bearer ' + token
+          }
+          }).then(response=>{
+            setProcessos(response.data); })
+        }   
+        else{
+          setProcessos(processos.filter(processo=> processo.id == id)); 
+        }  
     }
     
     return ( 
@@ -61,9 +76,9 @@ function GestaoIndustrial() {
              <h1>Módulo de Gestão do Processo Industrial</h1>        
              </div>
              <div className="buscariten">  
-             <input className="inputBusca" placeholder = "Buscar Processo Industrial"     />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar Processo Industrial"     />
              
-             <button className="buttonBusca" type ="button">
+             <button onClick={() => handleBuscaProcesso(idBusca) } button className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
               </button>   
 
@@ -76,10 +91,10 @@ function GestaoIndustrial() {
                   <p>{processo.descricao}</p>
 
                   <strong>Preço Venda:</strong>
-                  <p>{processo.precoVenda}</p>
+                  <p>{processo.precoVenda.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
 
                   <strong>Custo:</strong>
-                  <p>{processo.custo}</p>
+                  <p>{processo.custo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</p>
 
                   <strong>Máquinas Utilizadas:</strong>
                   <p>{processo.qatdeMarquinasUtilizadas}</p>
@@ -89,6 +104,9 @@ function GestaoIndustrial() {
 
                   <strong>Norma:</strong>
                   <p>{processo.norma}</p>
+
+                  <strong>Status:</strong>
+                  <p className={`${(processo.status == 1) ? 'statusativo' : 'statusinativo'}`}>{`${(processo.status == 1) ? 'ATIVO' : 'EM FALHA'}`}</p>
                 </li>        
                 ) ) }             
             </ul>

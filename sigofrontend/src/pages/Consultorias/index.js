@@ -12,7 +12,8 @@ function Consultorias() {
 
   const history = useHistory();
 
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
+  const [idBusca, setIdBusca] = useState(0);
   const [consultorias, setConsultorias] = useState([]);  
   const token = localStorage.getItem('token');
 
@@ -33,7 +34,43 @@ function Consultorias() {
       localStorage.clear();
       history.push('/');
     }
-    
+
+    function handleBuscaConsultoria(id){
+      if(id == ""){
+        api.get(`https://wu63epzr79.execute-api.us-east-1.amazonaws.com//ConsultoriaAssessoria//api//Consultorias//`, {
+        headers: {
+            Authorization:  'bearer ' + token
+          }
+          }).then(response=>{
+                 setConsultorias(response.data); })
+        }   
+        else{
+          setConsultorias(consultorias.filter(consultoria=> consultoria.id == id)); 
+        }  
+    }
+
+    function handleEditConsultoria(consultoria){
+      history.push({
+        pathname: `/consultoriaedit/`,
+        state: { data: consultoria }
+      });
+    }
+
+    async function handleDeleteConsultoria(id){
+      try{
+        await api.delete(`https://wu63epzr79.execute-api.us-east-1.amazonaws.com//ConsultoriaAssessoria//api//Consultorias//${id}`, {
+          headers:{
+            Authorization:  'bearer ' + token
+          }
+        });
+  
+        setConsultorias(consultorias.filter(consultoria=> consultoria.id !== id));
+      } catch(err){
+        alert('Erro ao deletar consultoria, tente novamente')
+      }
+    }
+
+   
     return ( 
         <div className="profile-container"  >
                          
@@ -59,12 +96,17 @@ function Consultorias() {
 
              <div className="incluiriten">  
              <h1>Módulo de Consultorias e Assessorias</h1>        
-             <Link className ="buttonAdd" to="/consultorias/add">Incluir</Link> 
+             <Link className ="buttonAdd" to={
+               {
+                 pathname: "/consultoriaadd",
+                 state: { data: null },
+             }
+            }>Incluir</Link> 
              </div>
              <div className="buscariten">  
-             <input className="inputBusca" placeholder = "Buscar Consultoria"     />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca"  type="text" placeholder = "Buscar Consultoria" />
              
-             <button className="buttonBusca" type ="button">
+             <button onClick={() => handleBuscaConsultoria(idBusca) } className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
               </button>   
 
@@ -72,11 +114,11 @@ function Consultorias() {
              <ul>
              {consultorias.map(consultoria => (
                   <li  key={consultoria.id}> 
-                  <button  type ="button">
+                  <button  onClick={() => handleEditConsultoria(consultoria) }type ="button">
                       <FiEdit2 size = {20} color = "#a8a8b3" />
                       <p>Editar</p>
                   </button>              
-                  <button  type ="button">
+                  <button onClick={() => handleDeleteConsultoria(consultoria.id) }  type ="button">
                       <FiTrash2 size = {20} color = "#a8a8b3" />
                       <p>Excluir</p>
                   </button>    
@@ -102,8 +144,8 @@ function Consultorias() {
                   <strong>Período Contratação:</strong>
                   <p>{consultoria.periodoContratacao}</p>
 
-                  <strong>Ativo:</strong>
-                  <p>{consultoria.ativo}</p>
+                  <strong>Em atividade:</strong>
+                  <p className={`${(consultoria.ativo == 'Sim') ? 'statusativo' : 'statusinativo'}`}>{consultoria.ativo}</p>
 
                   <strong>Data Início:</strong>
                   <p>{consultoria.dtInicio}</p>

@@ -1,5 +1,5 @@
 ﻿import React ,{useState, useEffect} from 'react';
-import {Link, useHistory} from 'react-router-dom';
+import {Link, Redirect, useHistory} from 'react-router-dom';
 import {FiPower, FiAlignJustify, FiTrash2, FiEdit2, FiArrowLeft, FiSearch} from 'react-icons/fi';
 
 import api from '../../services/api';
@@ -12,7 +12,8 @@ function NormasInternas() {
 
   const history = useHistory();
 
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
+  const [idBusca, setIdBusca] = useState(0);
   const [normas, setNormas] = useState([]);  
   const token = localStorage.getItem('token');
 
@@ -32,6 +33,41 @@ function NormasInternas() {
   function handleLogout(id){
       localStorage.clear();
       history.push('/');
+    }
+
+    function handleBuscaNorma(id){
+      if(id == ""){
+        api.get(`https://wu63epzr79.execute-api.us-east-1.amazonaws.com//GestaoNormas//api//Normas//`, {
+        headers: {
+            Authorization:  'bearer ' + token
+          }
+          }).then(response=>{
+            setNormas(response.data); })
+        }   
+        else{
+          setNormas(normas.filter(norma=> norma.id == id)); 
+        }  
+    }
+
+    async function handleDeleteNorma(id){
+      try{
+        await api.delete(`https://wu63epzr79.execute-api.us-east-1.amazonaws.com//GestaoNormas//api//Normas//${id}`, {
+          headers:{
+            Authorization:  'bearer ' + token
+          }
+        });
+  
+        setNormas(normas.filter(norma=> norma.id !== id));
+      } catch(err){
+        alert('Erro ao deletar norma, tente novamente')
+      }
+    }
+
+    function handleEditNorma(norma){
+      history.push({
+        pathname: `/normasinternasedit/`,
+        state: { data: norma }
+      });
     }
     
     return ( 
@@ -59,12 +95,12 @@ function NormasInternas() {
 
              <div className="incluiriten">  
              <h1>Normas Internas</h1>        
-             <Link className ="buttonAdd" to="/normas/add">Incluir</Link> 
+             <Link className ="buttonAdd" to="/normasinternasadd">Incluir</Link> 
              </div>
              <div className="buscariten">  
-             <input className="inputBusca" placeholder = "Buscar Norma Interna"     />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar Norma Interna"     />
              
-             <button className="buttonBusca" type ="button">
+             <button onClick={() => handleBuscaNorma(idBusca) } className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
               </button>   
 
@@ -72,11 +108,11 @@ function NormasInternas() {
              <ul>
              {normas.map(norma => (
                   <li  key={norma.id}> 
-                  <button  type ="button">
+                  <button  onClick={() => handleEditNorma(norma) } type ="button">
                       <FiEdit2 size = {20} color = "#a8a8b3" />
                       <p>Editar</p>
                   </button>              
-                  <button  type ="button">
+                  <button  onClick={() => handleDeleteNorma(norma.id) } type ="button">
                       <FiTrash2 size = {20} color = "#a8a8b3" />
                       <p>Excluir</p>
                   </button>    
@@ -84,20 +120,20 @@ function NormasInternas() {
                   <strong>Nome:</strong>
                   <p>{norma.nome}</p>
 
-                  <strong>Categoria</strong>
+                  <strong>Categoria:</strong>
                   <p>{norma.categoria}</p>
 
                   <strong>Ano Publicação:</strong>
                   <p>{norma.anoPublicaçao}</p>
 
-                  <strong>Atualizada em::</strong>
+                  <strong>Atualizada em:</strong>
                   <p>{norma.dataAtualizacao}</p>
 
                   <strong>Descrição:</strong>
                   <p>{norma.descricao}</p>
 
                   <strong>Link do Documento:</strong>
-                  <p>{norma.link}</p>
+                  <div><p><a className = 'button' target="_blank" href={norma.link}>Acessar</a></p></div>
                 </li>        
                 ) ) }             
             </ul>

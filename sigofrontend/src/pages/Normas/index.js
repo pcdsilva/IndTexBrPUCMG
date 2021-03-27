@@ -9,10 +9,9 @@ import logoImg from '../../assets/logo.jpeg'
 
 function Normas() {
 
-
   const history = useHistory();
 
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
   
   const token = localStorage.getItem('token');
 
