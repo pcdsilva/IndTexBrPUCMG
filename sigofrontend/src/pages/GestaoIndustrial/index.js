@@ -76,7 +76,7 @@ function GestaoIndustrial() {
              <h1>Módulo de Gestão do Processo Industrial</h1>        
              </div>
              <div className="buscariten">  
-             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar Processo Industrial"     />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar ID de Processo Industrial"     />
              
              <button onClick={() => handleBuscaProcesso(idBusca) } button className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
@@ -86,6 +86,9 @@ function GestaoIndustrial() {
              <ul>
              {processos.map(processo => (
                   <li  key={processo.id}> 
+
+                  <strong>Id:</strong>
+                  <p>{processo.id}</p>
                
                   <strong>Descrição:</strong>
                   <p>{processo.descricao}</p>

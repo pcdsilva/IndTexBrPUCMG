@@ -98,7 +98,7 @@ function NormasInternas() {
              <Link className ="buttonAdd" to="/normasinternasadd">Incluir</Link> 
              </div>
              <div className="buscariten">  
-             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar Norma Interna"     />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar ID de Norma Interna"     />
              
              <button onClick={() => handleBuscaNorma(idBusca) } className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
@@ -116,6 +116,9 @@ function NormasInternas() {
                       <FiTrash2 size = {20} color = "#a8a8b3" />
                       <p>Excluir</p>
                   </button>    
+
+                  <strong>Id:</strong>
+                  <p>{norma.id}</p>
 
                   <strong>Nome:</strong>
                   <p>{norma.nome}</p>

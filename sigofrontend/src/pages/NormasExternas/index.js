@@ -76,7 +76,7 @@ function NormasExternas() {
              <h1>Normas Externas</h1>        
              </div>
              <div className="buscariten">  
-             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar Norma Externa"     />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca" placeholder = "Buscar ID de Norma Externa"     />
              
              <button onClick={() => handleBuscaNorma(idBusca) } className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
@@ -86,6 +86,9 @@ function NormasExternas() {
              <ul>
              {normas.map(norma => (
                   <li  key={norma.id}> 
+
+                  <strong>Id:</strong>
+                  <p>{norma.id}</p>
                
                   <strong>Nome:</strong>
                   <p>{norma.nome}</p>

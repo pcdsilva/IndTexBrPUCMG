@@ -104,7 +104,7 @@ function Consultorias() {
             }>Incluir</Link> 
              </div>
              <div className="buscariten">  
-             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca"  type="text" placeholder = "Buscar Consultoria" />
+             <input onChange={e => { setIdBusca(e.target.value) }} className="inputBusca"  type="text" placeholder = "Buscar ID de Consultoria" />
              
              <button onClick={() => handleBuscaConsultoria(idBusca) } className="buttonBusca" type ="button">
                       <FiSearch size = {25} color = "#581919"/>
@@ -122,6 +122,9 @@ function Consultorias() {
                       <FiTrash2 size = {20} color = "#a8a8b3" />
                       <p>Excluir</p>
                   </button>    
+
+                  <strong>Id:</strong>
+                  <p>{consultoria.id}</p>
 
                   <strong>Departamento:</strong>
                   <p>{consultoria.departamento}</p>
