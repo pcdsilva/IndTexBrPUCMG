@@ -37,3 +37,4 @@ C:\_Fonte-TCC\IndTexBrPUCMG\sap\obj\Debug\netcoreapp3.1\staticwebassets\Sap.Stat
 C:\_Fonte-TCC\IndTexBrPUCMG\sap\obj\Debug\netcoreapp3.1\Sap.dll
 C:\_Fonte-TCC\IndTexBrPUCMG\sap\obj\Debug\netcoreapp3.1\Sap.pdb
 C:\_Fonte-TCC\IndTexBrPUCMG\sap\obj\Debug\netcoreapp3.1\Sap.genruntimeconfig.cache
+C:\_Fonte-TCC\IndTexBrPUCMG\sap\obj\Debug\netcoreapp3.1\Sap.csprojAssemblyReference.cache
