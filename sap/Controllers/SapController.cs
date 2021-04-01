@@ -25,13 +25,5 @@ namespace Sap.Controllers
             var produtor = new ProducerWrapper(this.config, "product_topic");
             await produtor.EnviarMessage(JsonConvert.SerializeObject(processo));
         }
-
-        [HttpPost]
-        [Route("NovoEventoProcesso")]
-        public async Task NovoEventoProcesso([FromBody] Processo processo)
-        {
-            var produtor = new ProducerWrapper(this.config, "product_topic");
-            await produtor.EnviarMessage(JsonConvert.SerializeObject(processo));
-        }
     }
 }
