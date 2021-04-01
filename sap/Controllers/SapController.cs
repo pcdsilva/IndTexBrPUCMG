@@ -32,7 +32,7 @@ namespace Sap.Controllers
         public async System.Threading.Tasks.Task NovoEvento([FromBody] EventoLinhaProducao eventoLinhaProducao)
         {
             eventoLinhaProducao.inicio = DateTime.Now;
-            var producer = new ProducerWrapper(this.config, "EVENTO_LINHA_PRODUCAO_CADASTRADO_DPI");
+            var producer = new ProducerWrapper(this.config, "product_topic");
             await producer.writeMessage(JsonConvert.SerializeObject(eventoLinhaProducao));
         }
     }
