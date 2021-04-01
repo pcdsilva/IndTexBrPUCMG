@@ -1,0 +1,46 @@
+{
+	"id": "c134ecd1-8bf5-b159-692b-d32337e9e427",
+	"name": "Sap",
+	"description": "",
+	"order": [
+		"6a657181-4854-dd25-8ae9-945f7f2f34dd"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617290970214,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "6a657181-4854-dd25-8ae9-945f7f2f34dd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8010/sap/nova-producao",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "c134ecd1-8bf5-b159-692b-d32337e9e427",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Sap",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617290971985,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"id\":\"e854d026-61b4-451a-a9aa-1465cc01db34\",\n\t\"descricao\":\"Produção de tecido verde\",\n\t\"precovenda\":3200.34,\n\t\"custo\":500.24,\n\t\"qtdMaquinasUtilizadas\":3,\n\t\"horasEstimadas\":7\n}"
+		}
+	]
+}
