@@ -22,7 +22,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:8010/sap/nova-producao",
+			"url": "http://localhost:8010/sap/NovoProcesso",
 			"queryParams": [],
 			"pathVariables": {},
 			"pathVariableData": [],
@@ -40,7 +40,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"rawModeData": "{\n\t\"id\":\"e854d026-61b4-451a-a9aa-1465cc01db34\",\n\t\"descricao\":\"Produção de tecido verde\",\n\t\"precovenda\":3200.34,\n\t\"custo\":500.24,\n\t\"qtdMaquinasUtilizadas\":3,\n\t\"horasEstimadas\":7\n}"
+			"rawModeData": "{\n\t\"id\":\"e854d026-61b4-451a-a9aa-1465cc01db34\",\n\t\"descricao\":\"Produção de tecido verde\",\n\t\"precovenda\":3200.34,\n\t\"custo\":500.24,\n\t\"QtdeMarquinasUtilizadas\":3,\n\t\"horasEstimadas\":7,\n\t\"norma\":"",\n\t\"status\":1\n}"
 		}
 	]
 }

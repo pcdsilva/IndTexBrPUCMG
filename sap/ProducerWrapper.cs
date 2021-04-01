@@ -17,7 +17,7 @@ namespace Sap
             this._config = config;
             this._producer = new ProducerBuilder<string, string>(this._config).Build();
         }
-        public async Task writeMessage(string message)
+        public async Task EnviarMessage(string message)
         {
             var dr = await this._producer.ProduceAsync(this._topicName, new Message<string, string>()
             {

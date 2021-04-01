@@ -1,8 +1,9 @@
 using System;
 using Confluent.Kafka;
+using Sap.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Sap.models;
+using System.Threading.Tasks;
 
 namespace Sap.Controllers
 {
@@ -18,22 +19,19 @@ namespace Sap.Controllers
         }
 
         [HttpPost]
-        [Route("nova-producao")]
-        public async System.Threading.Tasks.Task NovaProducao([FromBody] LinhaProducao linhaProducao)
+        [Route("NovoProcesso")]
+        public async Task NovoProcesso([FromBody] Processo processo)
         {
-            linhaProducao.inicio = DateTime.Now;
-            var producer = new ProducerWrapper(this.config, "product_topic");
-            Console.Write(linhaProducao);
-            await producer.writeMessage(JsonConvert.SerializeObject(linhaProducao));
+            var produtor = new ProducerWrapper(this.config, "product_topic");
+            await produtor.EnviarMessage(JsonConvert.SerializeObject(processo));
         }
 
         [HttpPost]
-        [Route("novo-evento-producao")]
-        public async System.Threading.Tasks.Task NovoEvento([FromBody] EventoLinhaProducao eventoLinhaProducao)
+        [Route("NovoEventoProcesso")]
+        public async Task NovoEventoProcesso([FromBody] Processo processo)
         {
-            eventoLinhaProducao.inicio = DateTime.Now;
-            var producer = new ProducerWrapper(this.config, "product_topic");
-            await producer.writeMessage(JsonConvert.SerializeObject(eventoLinhaProducao));
+            var produtor = new ProducerWrapper(this.config, "product_topic");
+            await produtor.EnviarMessage(JsonConvert.SerializeObject(processo));
         }
     }
 }
