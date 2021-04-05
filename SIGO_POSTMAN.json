@@ -175,7 +175,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer 2qaE-3CfpbYg2A_Y2tb4Yhp1IP18M1rllOJ0xTVH335Rl52zLDW2MpJy0HxH7LBHBxeYN9FpFeCVOKydF_81IMwSjJKGT3m2nZZCxQ8ye4vL2krYDGVW4NqVgrwg8rZ5PcLlFouEkCiLAnTi2_xJwxHXjA0Yg7_V40WkAVxRqHlqV-6YzdYNPdjoQAT8aSoMGg0Pv7dwk2CWAUBoyHxqjCRtmdhqHPYJMisCvD4KBO5OilMerpYVhM18gfF2bPsQkzPGNa6McUjJnVytnjy5obgV7DRRcBzaqm4lRpIV08J3-mOZxocH7-fill4yMOKw",
+						"value": "bearer sY0r_biexFAK7PCdZyT-oYidvnDhqEiVj5JcxJ_1C1SRYX_L0S1DPdAq8FU_hhRvKC34v2MRWYo0KGx3SAVa-iMfSbII1nPNqwtaiA1Y6EsmDEC9BQmdAGmXkHcfnoGfk6dZdiMkrWvWK4QBG1oQYlN9M7CFmRV048iNGVACYtUze4Df3bDUe8l8iU53BoXigWjO1-9SkILv4VD2dpoWDbM3k-3nlTA1Z1Mq6pkyPStoOefzQYqxY0zAZk1Kd7XiiUORBactlpLlQKdOCN82pYMd6WLr4ofgBq5rZ07S7Y09x4qUBuTltSiitJfbSWiA",
 						"type": "text"
 					}
 				],
@@ -245,10 +245,16 @@
 			"name": "POST CONSULTORIAS",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer sY0r_biexFAK7PCdZyT-oYidvnDhqEiVj5JcxJ_1C1SRYX_L0S1DPdAq8FU_hhRvKC34v2MRWYo0KGx3SAVa-iMfSbII1nPNqwtaiA1Y6EsmDEC9BQmdAGmXkHcfnoGfk6dZdiMkrWvWK4QBG1oQYlN9M7CFmRV048iNGVACYtUze4Df3bDUe8l8iU53BoXigWjO1-9SkILv4VD2dpoWDbM3k-3nlTA1Z1Mq6pkyPStoOefzQYqxY0zAZk1Kd7XiiUORBactlpLlQKdOCN82pYMd6WLr4ofgBq5rZ07S7Y09x4qUBuTltSiitJfbSWiA",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": " {\r\n        \"departamento\": \"Segurança e Qualidade\",\r\n        \"setor\": \"Inspeção Qualidade Fornecedores\",\r\n        \"razaoSocial\": \"CGA Consultoria Ambiental Ltda\",\r\n        \"nomeFantasia\": \"CGA GEO Consultoria Ambiental\",\r\n        \"cnpj\": null,\r\n        \"dtContratacao\": \"90604362000184\",\r\n        \"periodoContratacao\": \"10 meses\",\r\n        \"ativo\": \"Sim\",\r\n        \"dtInicio\": \"28/01/2021\",\r\n        \"dtTermino\": \"28/11/2021\",\r\n        \"norma\": null,\r\n        \"descricao\": \"Consultoria\"\r\n    }",
+					"raw": " {\r\n        \"departamento\": \"Segurança e Qualidade\",\r\n        \"setor\": \"Inspeção Qualidade Fornecedores\",\r\n        \"razaoSocial\": \"CGA Consultoria Ambiental Ltda\",\r\n        \"nomeFantasia\": \"CGA GEO Consultoria Ambiental\",\r\n        \"cnpj\": \"01.432.935/0001-00\",\r\n        \"dtContratacao\": \"90604362000184\",\r\n        \"periodoContratacao\": \"10 meses\",\r\n        \"ativo\": \"Em Andamento\",\r\n        \"dtInicio\": \"28/01/2021\",\r\n        \"dtTermino\": \"28/11/2021\",\r\n        \"norma\": \"ABNT554676\",\r\n        \"descricao\": \"Consultoria\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -303,7 +309,13 @@
 			"name": "DEL CONSULTORIAS",
 			"request": {
 				"method": "DELETE",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer Q1vU5vstjiYaibW4s8blYJyCjizMp1NOwDWJhOaUNF0dI2IijS8MITtrrBgJSkCJ02kgPbfReIM3_J-oFbMOcQofJ9rSbKxnbnnSbraXpazvwdIbYLA5l7vQZllfpAzfjeoKR0Xpi9t4iGXqrRCqsd1ZbTl3hMA89w1BVqBxhQ94on4CyIsWRTRL8YapDBqp4fKJe4h0L6NamaT14YGwJ85zMOdWdo1TtZkAvb5K3JYjzsrv9ubQgcOEzFYFWbQdXAWkxcYBIp9MX7xWUkqcKoOOps0_7VMdkVP7wvcyvLBbRtusa0O_sts_JEhUiFp8",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "{   \r\n        \"id\" : \"2\"\r\n        \"categoria\": \"TERSTES\",\r\n        \"nome\": \"ABNT NBR 12744:1993\",\r\n        \"anoPublicaçao\": \"1993\",\r\n        \"descricao\": \"Fibras têxteis – Classificação.\",\r\n        \"link\": \"http://biblioteca.fecap.br/wp-content/uploads/2016/03/Manual-ABNT_-regras-gerais-de-estilo-e-formata%C3%A7%C3%A3o-de-trabalhos-acad%C3%AAmicos.pdf\"\r\n    }",
@@ -314,7 +326,7 @@
 					}
 				},
 				"url": {
-					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/4",
+					"raw": "{{AWSGATEWAY}}/ConsultoriaAssessoria/api/Consultorias/2",
 					"host": [
 						"{{AWSGATEWAY}}"
 					],
@@ -322,7 +334,7 @@
 						"ConsultoriaAssessoria",
 						"api",
 						"Consultorias",
-						"4"
+						"2"
 					]
 				}
 			},
@@ -411,7 +423,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer z5TUXZ7VVFH8VUKZubfITXpX-Uw2Zlz6P3M01TFkztzYua90dQ83r4AfiJeETbnzlfUbAnd4f4zmPGC4_12yA1gJMSqp25KGz7XBmNatR6Nna0IcFlDfVpoktbXhrDZrMwCVEfxOnUIzVAeKGf8lDPjBwPbqGLMv1bQ32lDQurJRRSyXhTODCR35t9MrQiSHYJFUK_6iw1_2fb3vo_XquB4R3hDjyDWZkHua3sTF9HuwX5y8787_tpvVY_05dO5umlClbZX_DUugKW5R-ZMc3sFToNcUkBrmgsQyuTk_jKjwwLm8WAcbDKo5lkzCSAH",
+						"value": "bearer lKVIM42UvvbT5bPkGNEiPVZFCUOiDmMHhd1-QR-ZGdlTPZgDwHIn9-sKpDDnMYDX1XRaZrejPyz231kvuFzlBUqnUNMG7Ng4wJZRy2i2IQVpskFYChq7HS29au0FKPAyCIaI2jEbQELPw1ERhZCOXZuoHR_hddLyORiHYQtyqZbdvTz_gqcTAylVuelWep4xj9y_eMl63sfyJOS6CFfZ5AV1jsToJLVZ1sdqctSaGyjhnhXKjYjwnYfqsZREBo5VWhdOrsReIk9_A99Z0_gbNiVu5SbsdtqmQeSGOghdfg-ASua6z39sdQhzZxlfaAzh",
 						"type": "text"
 					}
 				],
@@ -568,7 +580,7 @@
 					"urlencoded": [
 						{
 							"key": "username",
-							"value": "Murilo",
+							"value": "murilo@sigo.com.br",
 							"type": "text"
 						},
 						{
@@ -607,7 +619,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "bearer mQUMDZ9o8aWA9aKnwiD1VlClHQg29SnMGjquJI3V876r-YRbbw7jfxQGPpkzjKx34ogBJIR_Cg9sTFNSRRZc9h92SkX5tRpR463QR1OA3KkxQ_iXr2eG7qBDtoJtiW8Z__JPeenVz7ufuZRCzPOLwxxdJgOsMQrK6OQRGrZvwMh06mvp5zS43LV29x_YS2IhQfaPwovXdmZT1tjJEJDiH2EszFqtPXaBgv1KE1p6Hqr1h6oSK8I2tDn0hKypZ78tXHUtOkrLSCiDK282oOHq5PLZjvfFQfevSa4REse8iZSJoooSsQm16I53XZW-Hg9o",
+						"value": "bearer A2bwIr6gibk_j4BbAHIUJogY_Cf2gmWuR3kZikq4d39Mp3_Ft2gDVHlsQLZuSiLhS5uLPmuTksVISZPo5yfmS3-oaUA1D2v3sqnIX_G2hYFLTAGJEQ5DTHH2EZN39dToSXH4wkbXODc6cEAfGcIV6QhzEi7svX54eeT0L-1rhbxzxLIQ3n6PZnLgK5ehIhhLa-qwKsVb_NmdAwkbJFQme_2trl5WCA5XwUkudOKahBXa0QR1Y9SndDmhh18c3aAg6i61W0uQ8JVQAeU8OMLCYT4ZbLpVIePH_lqUQ27f_IhARPg8BvCJJ7mU3easq4lS",
 						"type": "text"
 					}
 				],
@@ -631,6 +643,42 @@
 						"api",
 						"Normas",
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAP CONNECTOR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "bearer A2bwIr6gibk_j4BbAHIUJogY_Cf2gmWuR3kZikq4d39Mp3_Ft2gDVHlsQLZuSiLhS5uLPmuTksVISZPo5yfmS3-oaUA1D2v3sqnIX_G2hYFLTAGJEQ5DTHH2EZN39dToSXH4wkbXODc6cEAfGcIV6QhzEi7svX54eeT0L-1rhbxzxLIQ3n6PZnLgK5ehIhhLa-qwKsVb_NmdAwkbJFQme_2trl5WCA5XwUkudOKahBXa0QR1Y9SndDmhh18c3aAg6i61W0uQ8JVQAeU8OMLCYT4ZbLpVIePH_lqUQ27f_IhARPg8BvCJJ7mU3easq4lS",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\":20,\r\n        \"descricao\": \"Produção de Tecido Vermelho\",\r\n        \"precoVenda\": 4250.00,\r\n        \"custo\": 3500.0,\r\n        \"qatdeMarquinasUtilizadas\": 4,\r\n        \"horasEstimadas\": 14,\r\n        \"norma\": \"ABNT NBR 10677:1989\",\r\n        \"status\":1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8010/sap/NovoProcesso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"sap",
+						"NovoProcesso"
 					]
 				}
 			},

@@ -1,0 +1,55 @@
+version: "3.6"
+services:
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    networks: 
+      - sigo-poc-network
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    networks: 
+      - sigo-poc-network
+    depends_on:
+      - zookeeper
+    ports:
+      - 9092:9092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  kafdrop:
+    image: obsidiandynamics/kafdrop
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: kafka:29092
+      JVM_OPTS: "-Xms16M -Xmx48M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication"
+    depends_on:
+      - kafka
+    networks:
+      - sigo-poc-network
+
+  sap:
+    image: sap:latest
+    build: ./src/sap
+    networks: 
+      - sigo-poc-network
+    ports:
+      - "8010:8010"
+    depends_on:
+      - kafka     
+    environment:
+      KAFKA_CONNECT: kafka:29092
+ 
+networks: 
+    sigo-poc-network:
+        driver: bridge
+  
