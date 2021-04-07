@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X12tRsti6S5Vpk1+1Hr5qs9wIfAaGR124xVlOFT+WqEEvn3Kyif6K6u5OzBGvfULnFsCk0eKtte9LzrJ9XSO0g==",
+  "dgSpecHash": "JrMWdI0MhdNNngLMpq50ZuS+PoYPfbzK9qQQXMU6PTApuUkSUt9MQAc56/FZqq/0n5yOhOH/eY6EGNjHXOgOag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\sap\\Sap.csproj",
+  "projectFilePath": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\SAPKAFKA\\src\\sap\\Sap.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Murilo\\.nuget\\packages\\confluent.kafka\\1.5.1\\confluent.kafka.1.5.1.nupkg.sha512",
     "C:\\Users\\Murilo\\.nuget\\packages\\librdkafka.redist\\1.5.0\\librdkafka.redist.1.5.0.nupkg.sha512",

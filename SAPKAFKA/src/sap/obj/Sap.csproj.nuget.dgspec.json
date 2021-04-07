@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\sap\\Sap.csproj": {}
+    "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\SAPKAFKA\\src\\sap\\Sap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\sap\\Sap.csproj": {
+    "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\SAPKAFKA\\src\\sap\\Sap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\sap\\Sap.csproj",
+        "projectUniqueName": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\SAPKAFKA\\src\\sap\\Sap.csproj",
         "projectName": "Sap",
-        "projectPath": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\sap\\Sap.csproj",
+        "projectPath": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\SAPKAFKA\\src\\sap\\Sap.csproj",
         "packagesPath": "C:\\Users\\Murilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\sap\\obj\\",
+        "outputPath": "C:\\Users\\Murilo\\Documents\\ProjetoTCCPUC\\SAPKAFKA\\src\\sap\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
