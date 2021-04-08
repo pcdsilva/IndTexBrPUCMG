@@ -90,7 +90,7 @@ function NormasInternasEdit(props) {
                     <FiPower size = {25} color = "#581919" />
                   </button>
             </header>   
-            <h1>Nova Consultoria</h1> 
+            <h1>Editar Norma Interna</h1> 
             <form className="form" onSubmit = {hendleEditNormaInterna}>
             <div className = "inputFloat">   
 

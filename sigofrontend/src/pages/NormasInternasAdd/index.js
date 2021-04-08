@@ -78,7 +78,7 @@ function NormasInternasAdd() {
                     <FiPower size = {25} color = "#581919" />
                   </button>
             </header>   
-            <h1>Nova Consultoria</h1> 
+            <h1>Nova Norma Interna</h1> 
             <form className="form" onSubmit = {hendleAddNormaInterna}>
             <div className = "inputFloat">   
 
